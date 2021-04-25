@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/nihalgonsalves/esconfig/compare/v0.0.7...v0.0.8) (2021-04-25)
+
+### Bug Fixes
+
+- **eslint:** add overrides to react config too ([8dfa82d](https://github.com/nihalgonsalves/esconfig/commit/8dfa82d9c202de3fca1f02b79217f0be36353e5b))
+
 ### [0.0.7](https://github.com/nihalgonsalves/esconfig/compare/v0.0.6...v0.0.7) (2021-04-25)
 
 ### Bug Fixes
