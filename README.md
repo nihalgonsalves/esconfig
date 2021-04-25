@@ -31,6 +31,17 @@ Shared ECMAScript Config (TS, Lint, Prettier)
    }
    ```
 
+   If you're using React:
+
+   ```json
+   {
+     "extends": [
+       "./node_modules/@nihalgonsalves/esconfig/.eslintrc",
+       "./node_modules/@nihalgonsalves/esconfig/.eslintrc.react"
+     ]
+   }
+   ```
+
 4. `.prettierrc`
 
    ```json
