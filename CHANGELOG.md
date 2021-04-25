@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/nihalgonsalves/esconfig/compare/v0.0.6...v0.0.7) (2021-04-25)
+
+### Bug Fixes
+
+- publish eslint again ([5e49474](https://github.com/nihalgonsalves/esconfig/commit/5e4947400a6ea05efbeeec4db744a98a6c16adc4))
+
 ### [0.0.6](https://github.com/nihalgonsalves/esconfig/compare/v0.0.5...v0.0.6) (2021-04-25)
 
 ### Features
