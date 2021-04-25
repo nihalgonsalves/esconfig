@@ -6,6 +6,7 @@ on:
     paths:
       - 'package.json'
       - 'yarn.lock'
+      - 'eslint-rules-base.js'
       - '.eslintrc'
       - '.eslintrc.js'
       - '.eslintrc.react.js'

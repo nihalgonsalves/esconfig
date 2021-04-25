@@ -4,6 +4,7 @@
 module.exports = {
   extends: ['airbnb-typescript', 'airbnb/hooks', 'prettier'],
   rules: {
+    ...require('./eslint-rules-base'),
     'react/state-in-constructor': ['error', 'never'],
     'react/static-property-placement': ['error', 'static public field'],
     'react/react-in-jsx-scope': 'off',
