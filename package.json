@@ -7,7 +7,8 @@
   "author": "Nihal Gonsalves <nihal@nihalgonsalves.com>",
   "license": "MIT",
   "files": [
-    ".eslintrc",
+    ".eslintrc.js",
+    ".eslintrc.react.js",
     ".prettierrc.js",
     "tsconfig.json"
   ],
