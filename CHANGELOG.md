@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/nihalgonsalves/esconfig/compare/v0.0.5...v0.0.6) (2021-04-25)
+
+### Features
+
+- **eslint:** add react-specific config ([fef6d4c](https://github.com/nihalgonsalves/esconfig/commit/fef6d4c2eb9520734a5a59c3d05ce087f358bea6))
+
 ### [0.0.5](https://github.com/nihalgonsalves/esconfig/compare/v0.0.4...v0.0.5) (2021-04-25)
 
 ### Bug Fixes
