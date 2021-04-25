@@ -54,7 +54,7 @@ Shared ECMAScript Config (TS, Lint, Prettier)
    {
      "scripts": {
        "build": "tsc",
-       "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/",
+       "lint": "eslint ./src/",
        "format": "prettier . --write",
        "format:check": "prettier . --check"
      }
