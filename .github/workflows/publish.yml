@@ -7,7 +7,7 @@ on:
       - 'package.json'
       - 'yarn.lock'
       - '.eslintrc'
-      - '.prettierrc'
+      - '.prettierrc.js'
       - 'tsconfig.json'
       - '.github/workflows/publish.yml'
 jobs:
