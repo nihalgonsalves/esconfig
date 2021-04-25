@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/nihalgonsalves/esconfig/compare/v0.0.3...v0.0.4) (2021-04-25)
+
+### Features
+
+- add readme ([2986219](https://github.com/nihalgonsalves/esconfig/commit/29862194228b27ffac1e6bb6f79b1af8542da4f7))
+
+### Bug Fixes
+
+- **eslint:** disable dot-notation ([dc136f2](https://github.com/nihalgonsalves/esconfig/commit/dc136f264fc487c6ae0bc20cae05022eeb533277))
+
 ### [0.0.3](https://github.com/nihalgonsalves/esconfig/compare/v0.0.2...v0.0.3) (2021-04-25)
 
 ### Bug Fixes
