@@ -1,11 +1,21 @@
 {
   "name": "@nihalgonsalves/esconfig",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Shared ECMAScript Config (TS, Lint, Prettier)",
   "main": "index.js",
   "repository": "git@github.com:nihalgonsalves/esconfig.git",
   "author": "Nihal Gonsalves <nihal@nihalgonsalves.com>",
   "license": "MIT",
+  "files": [
+    ".eslintrc",
+    ".prettierrc",
+    "tsconfig.json"
+  ],
+  "standard-version": {
+    "scripts": {
+      "postchangelog": "prettier --write CHANGELOG.md"
+    }
+  },
   "scripts": {
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",

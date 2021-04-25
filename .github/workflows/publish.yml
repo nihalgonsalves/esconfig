@@ -1,0 +1,56 @@
+name: publish
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'package.json'
+      - 'yarn.lock'
+      - '.eslintrc'
+      - '.prettierrc'
+      - 'tsconfig.json'
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: yarn install --frozen-lockfile
+      - run: yarn standard-version --dry-run
+      # yarn doesn't have an equivalent preview
+      - run: npm publish --dry-run
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: NPM
+      url: https://www.npmjs.com/package/@nihalgonsalves/esconfig
+    steps:
+      - name: git config
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: 'https://registry.npmjs.org'
+      - run: yarn install --frozen-lockfile
+      - run: yarn standard-version
+      - name: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn publish --non-interactive --access public
+      - run: git push --follow-tags origin main
+      - id: version
+        uses: actions/github-script@v4
+        with:
+          result-encoding: string
+          script: |
+            const pkg = require('./package.json')
+            return `v${pkg.version}`
+      - uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          body_path: CHANGELOG.md
+          tag_name: ${{ steps.version.outputs.result }}
