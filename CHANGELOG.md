@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/nihalgonsalves/esconfig/compare/v0.0.9...v0.1.0) (2021-12-29)
+
+### ⚠ BREAKING CHANGES
+
+- eslint v8, node v16
+
+- empty commit for version bump ([0868bd0](https://github.com/nihalgonsalves/esconfig/commit/0868bd0467e6ae088413a725663afbd451e44347))
+
 ### [0.0.9](https://github.com/nihalgonsalves/esconfig/compare/v0.0.8...v0.0.9) (2021-05-12)
 
 ### [0.0.8](https://github.com/nihalgonsalves/esconfig/compare/v0.0.7...v0.0.8) (2021-04-25)
