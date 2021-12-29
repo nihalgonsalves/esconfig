@@ -3,7 +3,7 @@
 /** @type import('eslint-define-config').EslintConfig */
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'import'],
   parserOptions: {
     project: './**/tsconfig*.json',
   },
