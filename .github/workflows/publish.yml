@@ -27,6 +27,8 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v2
+        with:
+          node-version: 16
       - run: yarn install --frozen-lockfile
       # not dry-run, but this job doesn't commit or push anything anyway
       # required to get the actual bumped version
@@ -57,7 +59,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
           registry-url: 'https://registry.npmjs.org'
       - run: yarn install --frozen-lockfile
       - run: yarn standard-version
