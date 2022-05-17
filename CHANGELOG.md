@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/nihalgonsalves/esconfig/compare/v0.1.2...v0.2.0) (2022-05-17)
+
+### ⚠ BREAKING CHANGES
+
+- **tsconfig:** tsconfig now targets es2022
+- **tsconfig:** tsconfig now turns on `noImplicitOverride` and `exactOptionalPropertyTypes`
+
+### Features
+
+- **tsconfig:** turn on stricter flags ([dedf98b](https://github.com/nihalgonsalves/esconfig/commit/dedf98bc00ef225302993da5eee44fd382e78c5f))
+- **tsconfig:** update target/module to es2022 ([03a42ff](https://github.com/nihalgonsalves/esconfig/commit/03a42ffb74d44c80e9e9d5788fe44c81213125c7))
+
 ### [0.1.2](https://github.com/nihalgonsalves/esconfig/compare/v0.1.1...v0.1.2) (2022-05-17)
 
 ### [0.1.1](https://github.com/nihalgonsalves/esconfig/compare/v0.1.0...v0.1.1) (2022-05-17)
