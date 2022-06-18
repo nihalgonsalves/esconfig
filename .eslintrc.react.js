@@ -3,6 +3,7 @@
 /** @type import('eslint-define-config').EslintConfig */
 module.exports = {
   extends: ['airbnb-typescript', 'airbnb/hooks', 'prettier'],
+  plugins: ['@typescript-eslint', 'import', 'react'],
   rules: {
     ...require('./eslint-rules-base'),
     'react/state-in-constructor': ['error', 'never'],
