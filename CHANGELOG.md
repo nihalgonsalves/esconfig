@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/nihalgonsalves/esconfig/compare/v0.2.0...v0.2.1) (2022-06-18)
+
+### Bug Fixes
+
+- add react plugin to react config ([890c5b1](https://github.com/nihalgonsalves/esconfig/commit/890c5b140f1329a3b69a060296c53b6f786ce9f3))
+
 ## [0.2.0](https://github.com/nihalgonsalves/esconfig/compare/v0.1.2...v0.2.0) (2022-05-17)
 
 ### ⚠ BREAKING CHANGES
