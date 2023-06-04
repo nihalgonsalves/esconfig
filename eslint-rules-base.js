@@ -54,6 +54,4 @@ module.exports = {
       assertionStyle: 'never',
     },
   ],
-  // TODO: https://github.com/typescript-eslint/typescript-eslint/issues/3104
-  '@typescript-eslint/dot-notation': 'off',
 };
