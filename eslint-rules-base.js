@@ -1,6 +1,6 @@
 // @ts-check
 
-/** @type import('eslint-define-config').EslintConfig['rules'] */
+/** @type import('eslint-define-config').Rules */
 module.exports = {
   'import/prefer-default-export': 'off',
   'import/no-default-export': 'error',
