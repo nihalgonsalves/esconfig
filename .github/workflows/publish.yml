@@ -50,6 +50,9 @@ jobs:
     environment:
       name: NPM
       url: https://www.npmjs.com/package/@nihalgonsalves/esconfig/v/${{ needs.preview.outputs.version }}
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - name: git config
         run: |
@@ -64,10 +67,10 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: yarn install --frozen-lockfile
       - run: yarn standard-version
-      - name: yarn publish
-        env:
+      - env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn publish --non-interactive --access public
+        # yarn doesn't have an equivalent --provenance
+        run: npm publish --provenance --access public
       - run: git push --follow-tags origin main
       - uses: softprops/action-gh-release@v1
         env:
