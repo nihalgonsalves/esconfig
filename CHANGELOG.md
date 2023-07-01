@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.2](https://github.com/nihalgonsalves/esconfig/compare/v0.3.0...v0.3.2) (2023-07-01)
+
+### Bug Fixes
+
+- **ci:** allow git push ([5c450aa](https://github.com/nihalgonsalves/esconfig/commit/5c450aaa86667cefe82d39f5dce2d9106876c54d))
+- **ci:** manually bump 0.3.1 after failed build ([de447f3](https://github.com/nihalgonsalves/esconfig/commit/de447f3f7b80b388e372efc1dc5f771227861a7f))
+
 ## [0.3.0](https://github.com/nihalgonsalves/esconfig/compare/v0.2.6...v0.3.0) (2023-07-01)
 
 ### ⚠ BREAKING CHANGES
