@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.3](https://github.com/nihalgonsalves/esconfig/compare/v0.3.2...v0.3.3) (2023-07-01)
+
+### Bug Fixes
+
+- mirror eslint->eslint.react extends ([64e8ccd](https://github.com/nihalgonsalves/esconfig/commit/64e8ccd933efc7190fde7573031bf57abc3728f4))
+
 ### [0.3.2](https://github.com/nihalgonsalves/esconfig/compare/v0.3.0...v0.3.2) (2023-07-01)
 
 ### Bug Fixes
