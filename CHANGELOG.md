@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.4](https://github.com/nihalgonsalves/esconfig/compare/v0.3.3...v0.3.4) (2023-07-01)
+
+### Bug Fixes
+
+- add missing react plugin ([8e81d69](https://github.com/nihalgonsalves/esconfig/commit/8e81d69c6baabb114bec25b4724f71deae0bc977))
+
 ### [0.3.3](https://github.com/nihalgonsalves/esconfig/compare/v0.3.2...v0.3.3) (2023-07-01)
 
 ### Bug Fixes
