@@ -51,7 +51,7 @@ jobs:
       name: NPM
       url: https://www.npmjs.com/package/@nihalgonsalves/esconfig/v/${{ needs.preview.outputs.version }}
     permissions:
-      contents: read
+      contents: write
       id-token: write
     steps:
       - name: git config
