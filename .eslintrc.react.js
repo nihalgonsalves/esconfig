@@ -1,6 +1,6 @@
 // @ts-check
 
-/** @type import('eslint-define-config').EslintConfig */
+/** @type import('eslint-define-config').ESLintConfig */
 module.exports = {
   extends: ['airbnb-typescript', 'airbnb/hooks', 'prettier'],
   plugins: ['@typescript-eslint', 'import', 'react'],

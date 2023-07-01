@@ -1,4 +1,5 @@
 // @ts-check
+/* eslint-env node */
 
 /** @type import('eslint-define-config').Rules */
 module.exports = {
@@ -28,16 +29,15 @@ module.exports = {
       alphabetize: { order: 'asc' },
     },
   ],
-  'no-unsafe-optional-chaining': 'error',
-  'no-void': ['error', { allowAsStatement: true }],
   '@typescript-eslint/no-unused-vars': [
     'error',
     { ignoreRestSiblings: true, argsIgnorePattern: '^_' },
   ],
-  '@typescript-eslint/consistent-type-imports': 'error',
+  '@typescript-eslint/consistent-type-imports': [
+    'error',
+    { fixStyle: 'inline-type-imports' },
+  ],
   '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-  '@typescript-eslint/prefer-optional-chain': 'error',
-  '@typescript-eslint/prefer-nullish-coalescing': 'error',
   '@typescript-eslint/ban-ts-comment': [
     'error',
     {
