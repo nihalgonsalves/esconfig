@@ -11,6 +11,7 @@ module.exports = {
     'eslint:recommended',
     'airbnb-typescript',
     'airbnb/hooks',
+    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:@typescript-eslint/strict',
@@ -25,5 +26,13 @@ module.exports = {
     // Not a problem with TypeScript
     'react/jsx-props-no-spreading': 'off',
     'react/require-default-props': 'off',
+    'react/jsx-key': [
+      'error',
+      {
+        checkFragmentShorthand: true,
+        checkKeyMustBeforeSpread: true,
+        warnOnDuplicates: true,
+      },
+    ],
   },
 };
