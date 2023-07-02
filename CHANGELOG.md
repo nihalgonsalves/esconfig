@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.5](https://github.com/nihalgonsalves/esconfig/compare/v0.3.4...v0.3.5) (2023-07-02)
+
+### Features
+
+- add react/jsx-key ([6b55f14](https://github.com/nihalgonsalves/esconfig/commit/6b55f1439abcb53b80155a7ddb261a5559dd6e07))
+
 ### [0.3.4](https://github.com/nihalgonsalves/esconfig/compare/v0.3.3...v0.3.4) (2023-07-01)
 
 ### Bug Fixes
