@@ -26,6 +26,8 @@ module.exports = {
     // Not a problem with TypeScript
     'react/jsx-props-no-spreading': 'off',
     'react/require-default-props': 'off',
+    'react/jsx-no-useless-fragment': ['error', { allowExpressions: true }],
+    'react/no-array-index-key': 'error',
     'react/jsx-key': [
       'error',
       {
