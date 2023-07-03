@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.6](https://github.com/nihalgonsalves/esconfig/compare/v0.3.5...v0.3.6) (2023-07-03)
+
+### Features
+
+- add no-useless-fragment, no-array-index-key ([674185c](https://github.com/nihalgonsalves/esconfig/commit/674185c89f78dc7605fed8c7a8eb603c1cf92683))
+
 ### [0.3.5](https://github.com/nihalgonsalves/esconfig/compare/v0.3.4...v0.3.5) (2023-07-02)
 
 ### Features
