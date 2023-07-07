@@ -14,6 +14,12 @@ on:
       - '.prettierrc.js'
       - 'tsconfig.json'
       - '.github/workflows/publish.yml'
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
 jobs:
   preview:
     runs-on: ubuntu-latest
@@ -44,15 +50,28 @@ jobs:
             const version = require('./package.json').version
             core.warning(`Approving this deployment will publish version ${version}`)
             return version
-  publish:
+
+  release:
     needs: [preview]
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          release-type: node
+          package-name: '@nihalgonsalves/esconfig'
+          bump-minor-pre-major: true
+          bump-patch-for-minor-pre-major: true
+
+  publish:
+    if: ${{ needs.release.outputs.release_created }}
+    needs: [preview, release]
     runs-on: ubuntu-latest
     environment:
       name: NPM
       url: https://www.npmjs.com/package/@nihalgonsalves/esconfig/v/${{ needs.preview.outputs.version }}
-    permissions:
-      contents: write
-      id-token: write
     steps:
       - name: git config
         run: |
@@ -72,9 +91,3 @@ jobs:
         # yarn doesn't have an equivalent --provenance
         run: npm publish --provenance --access public
       - run: git push --follow-tags origin main
-      - uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          body_path: CHANGELOG.md
-          tag_name: v${{ needs.preview.outputs.version }}

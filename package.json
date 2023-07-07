@@ -13,11 +13,6 @@
     ".prettierrc.js",
     "tsconfig.json"
   ],
-  "standard-version": {
-    "scripts": {
-      "postchangelog": "prettier --write CHANGELOG.md"
-    }
-  },
   "scripts": {
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
@@ -42,7 +37,6 @@
     "eslint-define-config": "^1.21.0",
     "husky": "^8.0.3",
     "prettier": "^2.8.8",
-    "standard-version": "^9.5.0",
     "typescript": "^5.1.6"
   },
   "peerDependencies": {
