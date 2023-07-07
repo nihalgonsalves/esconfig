@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.7](https://github.com/nihalgonsalves/esconfig/compare/v0.3.6...v0.3.7) (2023-07-07)
+
+
+### Bug Fixes
+
+* **ci:** remove preview/standard-version commands ([c12ca69](https://github.com/nihalgonsalves/esconfig/commit/c12ca699dd70d8783239be8b36a0773042de8883))
+
 ### [0.3.6](https://github.com/nihalgonsalves/esconfig/compare/v0.3.5...v0.3.6) (2023-07-03)
 
 ### Features
