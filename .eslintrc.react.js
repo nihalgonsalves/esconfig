@@ -8,6 +8,9 @@ module.exports = {
     project: './**/tsconfig*.json',
     warnOnUnsupportedTypeScriptVersion: false,
   },
+  settings: {
+    react: { version: 'detect' },
+  },
   extends: [
     'eslint:recommended',
     'airbnb-typescript',
