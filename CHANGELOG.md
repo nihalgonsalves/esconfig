@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.8](https://github.com/nihalgonsalves/esconfig/compare/v0.3.7...v0.3.8) (2023-07-10)
+
+
+### Bug Fixes
+
+* **react:** setup auto version detect ([593a3ef](https://github.com/nihalgonsalves/esconfig/commit/593a3ef0ee81718ac53896422ac04fe37dca065f))
+* suppress typescript-estree version warning ([36e8ae8](https://github.com/nihalgonsalves/esconfig/commit/36e8ae867863021f1390779fb8850f0c4abbf007))
+
 ## [0.3.7](https://github.com/nihalgonsalves/esconfig/compare/v0.3.6...v0.3.7) (2023-07-07)
 
 
