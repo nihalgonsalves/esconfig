@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/nihalgonsalves/esconfig/compare/v0.3.8...v0.4.0) (2023-07-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Major versions of prettier & typescript-eslint
+
+### Features
+
+* upgrade prettier v3 & typescript-eslint v6 ([#15](https://github.com/nihalgonsalves/esconfig/issues/15)) ([8603326](https://github.com/nihalgonsalves/esconfig/commit/8603326fd3b9f040fbbc3465491852caa6defcdb))
+
 ## [0.3.8](https://github.com/nihalgonsalves/esconfig/compare/v0.3.7...v0.3.8) (2023-07-10)
 
 
