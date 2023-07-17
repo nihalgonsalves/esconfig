@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/nihalgonsalves/esconfig/compare/v0.4.0...v0.5.0) (2023-07-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* new strict rules
+
+### Features
+
+* use new typescript-eslint configs ([#17](https://github.com/nihalgonsalves/esconfig/issues/17)) ([9f27f2f](https://github.com/nihalgonsalves/esconfig/commit/9f27f2f94b85fdd8b99792bbac561eb53a77ca84))
+
 ## [0.4.0](https://github.com/nihalgonsalves/esconfig/compare/v0.3.8...v0.4.0) (2023-07-13)
 
 
