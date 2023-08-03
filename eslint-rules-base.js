@@ -29,6 +29,8 @@ module.exports = {
       alphabetize: { order: 'asc' },
     },
   ],
+  'func-style': ['error', 'expression'],
+  'arrow-body-style': 'error',
   '@typescript-eslint/no-unused-vars': [
     'error',
     { ignoreRestSiblings: true, argsIgnorePattern: '^_' },
@@ -47,11 +49,21 @@ module.exports = {
       'ts-check': false,
     },
   ],
-  'func-style': ['error', 'expression'],
   '@typescript-eslint/consistent-type-assertions': [
     'error',
     {
       assertionStyle: 'never',
     },
   ],
+  '@typescript-eslint/strict-boolean-expressions': [
+    'error',
+    { allowNullableBoolean: true, allowNullableString: true },
+  ],
+  '@typescript-eslint/prefer-regexp-exec': 'error',
+  '@typescript-eslint/promise-function-async': 'error',
+  '@typescript-eslint/method-signature-style': 'error',
+  '@typescript-eslint/naming-convention': 'error',
+  '@typescript-eslint/no-import-type-side-effects': 'error',
+  '@typescript-eslint/require-array-sort-compare': 'error',
+  '@typescript-eslint/switch-exhaustiveness-check': 'error',
 };
