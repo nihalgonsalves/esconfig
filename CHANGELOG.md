@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/nihalgonsalves/esconfig/compare/v0.5.1...v0.6.0) (2023-08-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* New eslint rules
+
+### Features
+
+* add more rules ([fc701d7](https://github.com/nihalgonsalves/esconfig/commit/fc701d77226ea884f2f280ae393909de6baf965e))
+
 ## [0.5.1](https://github.com/nihalgonsalves/esconfig/compare/v0.5.0...v0.5.1) (2023-08-03)
 
 
