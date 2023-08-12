@@ -31,6 +31,8 @@ module.exports = {
   ],
   'func-style': ['error', 'expression'],
   'arrow-body-style': 'error',
+  'object-shorthand': 'error',
+  'no-useless-rename': 'error',
   '@typescript-eslint/no-unused-vars': [
     'error',
     { ignoreRestSiblings: true, argsIgnorePattern: '^_' },
