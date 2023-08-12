@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.1](https://github.com/nihalgonsalves/esconfig/compare/v0.6.0...v0.6.1) (2023-08-12)
+
+
+### Features
+
+* add rules for renaming imports/objects ([3f47c38](https://github.com/nihalgonsalves/esconfig/commit/3f47c3843cd4f8346db6073cd40ee2b89e507cd6))
+
 ## [0.6.0](https://github.com/nihalgonsalves/esconfig/compare/v0.5.1...v0.6.0) (2023-08-03)
 
 
