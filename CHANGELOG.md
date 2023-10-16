@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.6](https://github.com/nihalgonsalves/esconfig/compare/v0.6.5...v0.6.6) (2023-10-16)
+
+
+### Features
+
+* **deps:** bump the all group with 4 updates ([#38](https://github.com/nihalgonsalves/esconfig/issues/38)) ([bb1ba84](https://github.com/nihalgonsalves/esconfig/commit/bb1ba8492f999ec59416f8b455c188e43e13daeb))
+
 ## [0.6.5](https://github.com/nihalgonsalves/esconfig/compare/v0.6.4...v0.6.5) (2023-10-09)
 
 
