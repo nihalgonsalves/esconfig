@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.1](https://github.com/nihalgonsalves/esconfig/compare/v0.7.0...v0.7.1) (2024-01-01)
+
+
+### Bug Fixes
+
+* move back to dependabot `fix` prefix ([eb645fa](https://github.com/nihalgonsalves/esconfig/commit/eb645fab3d74ae5580002aa6014269a46cfa2650))
+
 ## [0.7.0](https://github.com/nihalgonsalves/esconfig/compare/v0.6.16...v0.7.0) (2024-01-01)
 
 
