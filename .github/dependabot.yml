@@ -16,7 +16,7 @@ updates:
     commit-message:
       # since a deps update is significant for this package,
       # don't use chore for non-dev updates
-      prefix: 'feat'
+      prefix: 'deps'
       prefix-development: 'chore'
       include: 'scope'
 
