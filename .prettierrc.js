@@ -1,3 +1,4 @@
-module.exports = {
-  singleQuote: true,
-};
+// @ts-check
+
+/** @type{import('prettier').Config} */
+module.exports = {};
