@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.7.1...esconfig-v0.8.0) (2024-01-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* update tsconfig and prettier settings
+
+### Features
+
+* **deps:** bump the all group with 4 updates ([#69](https://github.com/nihalgonsalves/esconfig/issues/69)) ([0634c38](https://github.com/nihalgonsalves/esconfig/commit/0634c38781a9f1b3ec7fea767b68e692029678ec))
+* update tsconfig and prettier settings ([c93aaaa](https://github.com/nihalgonsalves/esconfig/commit/c93aaaaa08f5a8ba2768513be8fff6dba043e072))
+
 ## [0.7.1](https://github.com/nihalgonsalves/esconfig/compare/v0.7.0...v0.7.1) (2024-01-01)
 
 
