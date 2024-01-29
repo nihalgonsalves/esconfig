@@ -17,8 +17,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "format": "prettier . --write",
-    "format:check": "prettier . --check",
-    "prepare": "husky install"
+    "format:check": "prettier . --check"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.19.1",
@@ -35,7 +34,6 @@
     "@commitlint/config-conventional": "^18.6.0",
     "eslint": "^8.56.0",
     "eslint-define-config": "^2.1.0",
-    "husky": "^9.0.6",
     "lefthook": "^1.6.1",
     "prettier": "^3.2.4",
     "typescript": "^5.1.6"
