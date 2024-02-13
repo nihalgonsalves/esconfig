@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.9.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.8.5...esconfig-v0.9.0) (2024-02-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** upgrade all incl typescript-eslint v7
+
+### Features
+
+* **deps:** upgrade all incl typescript-eslint v7 ([2ee9301](https://github.com/nihalgonsalves/esconfig/commit/2ee93015f30e1baa1246378603b8c7a314131219))
+
 ## [0.8.5](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.8.4...esconfig-v0.8.5) (2024-02-12)
 
 
