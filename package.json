@@ -6,7 +6,7 @@
   "repository": "git@github.com:nihalgonsalves/esconfig.git",
   "author": "Nihal Gonsalves <nihal@nihalgonsalves.com>",
   "license": "MIT",
-  "packageManager": "yarn@4.1.0+sha256.81a00df816059803e6b5148acf03ce313cad36b7f6e5af6efa040a15981a6ffb",
+  "packageManager": "yarn@4.1.1+sha256.f3cc0eda8e5560e529c7147565b30faa43b4e472d90e8634d7134a37c7f59781",
   "files": [
     "eslint-rules-base.js",
     ".eslintrc.js",
@@ -21,8 +21,8 @@
     "format:check": "prettier . --check"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.4.0",
-    "@typescript-eslint/parser": "^7.4.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
@@ -31,13 +31,13 @@
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.2.1",
-    "@commitlint/config-conventional": "^19.1.0",
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
     "eslint": "^8.57.0",
     "eslint-define-config": "^2.1.0",
-    "lefthook": "^1.6.7",
+    "lefthook": "^1.6.10",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "eslint": "^8.57.0",
