@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.9.9](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.9.8...esconfig-v0.9.9) (2024-04-29)
+
+
+### Features
+
+* **deps:** bump eslint-plugin-react-hooks from 4.6.0 to 4.6.2 ([#99](https://github.com/nihalgonsalves/esconfig/issues/99)) ([6d2df82](https://github.com/nihalgonsalves/esconfig/commit/6d2df8264cfff0d04e237c876b5b07025f697b7d))
+
 ## [0.9.8](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.9.7...esconfig-v0.9.8) (2024-04-24)
 
 
