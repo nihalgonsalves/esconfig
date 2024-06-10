@@ -21,8 +21,8 @@
     "format:check": "prettier . --check"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.11.0",
-    "@typescript-eslint/parser": "^7.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.12.0",
+    "@typescript-eslint/parser": "^7.12.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
@@ -36,12 +36,12 @@
     "eslint": "^8.57.0",
     "eslint-define-config": "^2.1.0",
     "lefthook": "^1.6.15",
-    "prettier": "^3.3.0",
+    "prettier": "^3.3.1",
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "eslint": "^8.57.0",
-    "prettier": "^3.3.0",
+    "prettier": "^3.3.1",
     "typescript": "^5.4.3"
   }
 }
