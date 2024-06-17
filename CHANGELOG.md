@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.9.15](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.9.14...esconfig-v0.9.15) (2024-06-17)
+
+
+### Bug Fixes
+
+* **deps:** bump braces from 3.0.2 to 3.0.3 in the npm_and_yarn group ([#112](https://github.com/nihalgonsalves/esconfig/issues/112)) ([4d7493e](https://github.com/nihalgonsalves/esconfig/commit/4d7493e0e8964d63a094c8fd62ebb91a80529755))
+
 ## [0.9.14](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.9.13...esconfig-v0.9.14) (2024-06-10)
 
 
