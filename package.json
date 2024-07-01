@@ -1,6 +1,6 @@
 {
   "name": "@nihalgonsalves/esconfig",
-  "version": "0.9.17",
+  "version": "0.9.18",
   "description": "Shared ECMAScript Config (TS, Lint, Prettier)",
   "main": "index.js",
   "repository": "git@github.com:nihalgonsalves/esconfig.git",
