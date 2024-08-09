@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.1](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.0...esconfig-v0.10.1) (2024-08-09)
+
+
+### Bug Fixes
+
+* disable eslint JS rules that cause false +ves ([88078f3](https://github.com/nihalgonsalves/esconfig/commit/88078f38b789bfe05fd03ea6aa6d91d362599330))
+
 ## [0.10.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.9.22...esconfig-v0.10.0) (2024-08-09)
 
 
