@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.9.22...esconfig-v0.10.0) (2024-08-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* eslint v9, typescript-eslint v8 (new rules), flat file, ESM-only package
+
+### Features
+
+* eslint v9, typescript-eslint v8, inline airbnb config ([#129](https://github.com/nihalgonsalves/esconfig/issues/129)) ([7198c52](https://github.com/nihalgonsalves/esconfig/commit/7198c52a2251fc8f0b998e312b49bf3018b933a5))
+
 ## [0.9.22](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.9.21...esconfig-v0.9.22) (2024-07-30)
 
 
