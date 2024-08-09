@@ -7,6 +7,12 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   js.configs.recommended,
+  // @ts-expect-error nullability
+  {
+    // extract only the rules, because this config otherwise applies only to
+    // TypeScript extensions, which causes problems with checkJs
+    rules: tseslint.configs.eslintRecommended.rules,
+  },
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
   {
