@@ -1,0 +1,197 @@
+import js from "@eslint/js";
+// @ts-expect-error no types
+import prettierConfig from "eslint-config-prettier";
+// @ts-expect-error no types
+import importPlugin from "eslint-plugin-import";
+import tseslint from "typescript-eslint";
+
+export default tseslint.config(
+  js.configs.recommended,
+  ...tseslint.configs.strictTypeChecked,
+  ...tseslint.configs.stylisticTypeChecked,
+  {
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        warnOnUnsupportedTypeScriptVersion: false,
+      },
+    },
+    plugins: {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      import: importPlugin,
+    },
+    rules: {
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          selector: "variable",
+          format: ["camelCase", "PascalCase", "UPPER_CASE"],
+        },
+        {
+          selector: "function",
+          format: ["camelCase", "PascalCase"],
+        },
+        {
+          selector: "typeLike",
+          format: ["PascalCase"],
+        },
+      ],
+      "@typescript-eslint/class-methods-use-this": "error",
+      "@typescript-eslint/default-param-last": ["error"],
+      "@typescript-eslint/no-dupe-class-members": ["error"],
+      "@typescript-eslint/no-loss-of-precision": ["error"],
+      "@typescript-eslint/no-loop-func": ["error"],
+      "@typescript-eslint/no-redeclare": ["error"],
+      "@typescript-eslint/no-shadow": ["error"],
+      "@typescript-eslint/only-throw-error": ["error"],
+      "@typescript-eslint/no-unused-expressions": [
+        "error",
+        {
+          allowShortCircuit: false,
+          allowTernary: false,
+          allowTaggedTemplates: false,
+          enforceForJSX: false,
+        },
+      ],
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          vars: "all",
+          args: "after-used",
+          ignoreRestSiblings: true,
+          argsIgnorePattern: "^_",
+        },
+      ],
+      "@typescript-eslint/no-use-before-define": [
+        "error",
+        {
+          functions: true,
+          classes: true,
+          variables: true,
+        },
+      ],
+      "@typescript-eslint/return-await": ["error", "in-try-catch"],
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          js: "never",
+          mjs: "never",
+          jsx: "never",
+          ts: "never",
+          tsx: "never",
+        },
+      ],
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          devDependencies: [
+            "test/**",
+            "tests/**",
+            "spec/**",
+            "**/__tests__/**",
+            "**/__mocks__/**",
+            "test.{js,jsx}",
+            "test.{ts,tsx}",
+            "test-*.{js,jsx}",
+            "test-*.{ts,tsx}",
+            "**/*{.,_}{test,spec}.{js,jsx}",
+            "**/*{.,_}{test,spec}.{ts,tsx}",
+            "**/*.config.{js,ts,cjs,mjs,cts,mts}",
+          ],
+          optionalDependencies: false,
+        },
+      ],
+      "import/no-default-export": "error",
+      "import/order": [
+        "error",
+        {
+          pathGroups: [
+            {
+              pattern: "@nihalgonsalves/**",
+              group: "internal",
+              position: "after",
+            },
+          ],
+          pathGroupsExcludedImportTypes: ["builtin"],
+          groups: [
+            "builtin",
+            "external",
+            "internal",
+            "unknown",
+            "parent",
+            "sibling",
+            "index",
+          ],
+          "newlines-between": "always",
+          alphabetize: { order: "asc" },
+        },
+      ],
+      "func-style": ["error", "expression"],
+      "arrow-body-style": "error",
+      "object-shorthand": "error",
+      "no-useless-rename": "error",
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        { fixStyle: "inline-type-imports" },
+      ],
+      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+      "@typescript-eslint/ban-ts-comment": [
+        "error",
+        {
+          "ts-expect-error": "allow-with-description",
+          "ts-ignore": true,
+          "ts-nocheck": true,
+          "ts-check": false,
+        },
+      ],
+      "@typescript-eslint/consistent-type-assertions": [
+        "error",
+        {
+          assertionStyle: "never",
+        },
+      ],
+      "@typescript-eslint/strict-boolean-expressions": [
+        "error",
+        { allowNullableBoolean: true, allowNullableString: true },
+      ],
+      "@typescript-eslint/promise-function-async": "error",
+      "@typescript-eslint/method-signature-style": "error",
+      "@typescript-eslint/no-import-type-side-effects": "error",
+      "@typescript-eslint/require-array-sort-compare": "error",
+      "@typescript-eslint/switch-exhaustiveness-check": "error",
+    },
+    settings: {
+      "import/extensions": [
+        ".cjs",
+        ".mjs",
+        ".js",
+        ".jsx",
+        ".cts",
+        ".mts",
+        ".ts",
+        ".tsx",
+      ],
+      "import/external-module-folders": ["node_modules", "node_modules/@types"],
+      "import/parsers": {
+        "@typescript-eslint/parser": [".cts", ".mts", ".ts", ".tsx"],
+      },
+      "import/resolver": {
+        node: {
+          extensions: [
+            ".cjs",
+            ".mjs",
+            ".js",
+            ".jsx",
+            ".cts",
+            ".mts",
+            ".ts",
+            ".tsx",
+          ],
+        },
+      },
+    },
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+  prettierConfig,
+);

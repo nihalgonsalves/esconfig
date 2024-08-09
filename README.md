@@ -7,14 +7,14 @@ Shared ECMAScript Config (TS, Lint, Prettier)
 1. Install
 
    ```sh
-   yarn add -D @nihalgonsalves/esconfig typescript eslint prettier
+   yarn add -D @nihalgonsalves/esconfig typescript typescript-eslint eslint prettier
    ```
 
 2. `tsconfig.json`
 
    ```json
    {
-     "extends": "@nihalgonsalves/esconfig",
+     "extends": "@nihalgonsalves/esconfig/tsconfig.shared.json",
      "compilerOptions": {
        "outDir": "./build",
        "rootDir": "./src"
@@ -23,32 +23,35 @@ Shared ECMAScript Config (TS, Lint, Prettier)
    }
    ```
 
-3. `.eslintrc`
+3. `eslint.config.mjs`
 
-   ```json
-   {
-     "extends": "./node_modules/@nihalgonsalves/esconfig/.eslintrc"
-   }
+   ```js
+   import tseslint from "typescript-eslint";
+
+   import sharedConfig from "@nihalgonsalves/esconfig/eslint.config.shared";
+
+   export default tseslint.config([
+     { ignores: [] },
+     ...sharedConfig,
+     // ... others
+   ]);
    ```
 
    If you're using React:
 
-   ```json
-   {
-     "extends": [
-       "./node_modules/@nihalgonsalves/esconfig/.eslintrc",
-       "./node_modules/@nihalgonsalves/esconfig/.eslintrc.react"
-     ]
-   }
+   ```js
+   import tseslint from "typescript-eslint";
+
+   import sharedConfig from "@nihalgonsalves/esconfig/eslint.config.react-shared";
+
+   export default tseslint.config([
+     { ignores: [] },
+     ...sharedConfig,
+     // ... others
+   ]);
    ```
 
-4. `.prettierrc`
-
-   ```json
-   "@nihalgonsalves/esconfig/.prettierrc"
-   ```
-
-5. `package.json`
+4. `package.json`
 
    ```json
    {
@@ -61,4 +64,4 @@ Shared ECMAScript Config (TS, Lint, Prettier)
    }
    ```
 
-6. Done! Don't forget to run `build`, `lint` and `format:check` in your CI workflow.
+5. Done! Don't forget to run `build`, `lint` and `format:check` in your CI workflow.
