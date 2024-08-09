@@ -1,28 +1,12 @@
 {
+  "extends": "./tsconfig.shared.json",
   "compilerOptions": {
-    "target": "es2022",
-    "module": "es2022",
-    "moduleResolution": "Bundler",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "moduleDetection": "force",
-
-    "types": [],
-
-    "sourceMap": true,
-    "strict": true,
-    "incremental": true,
-
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "exactOptionalPropertyTypes": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-
-    "forceConsistentCasingInFileNames": true,
-    "verbatimModuleSyntax": true
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": true,
+    "types": ["node"]
   }
 }

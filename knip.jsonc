@@ -1,0 +1,10 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": [
+    "eslint.config.shared.js!",
+    "eslint.config.react-shared.js!",
+    "test.ts",
+  ],
+  "project": ["**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}"],
+  "ignoreDependencies": ["@commitlint/cli"],
+}

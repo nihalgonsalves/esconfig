@@ -13,9 +13,6 @@ updates:
       - dependency-name: "@types/node"
         update-types:
           - "version-update:semver-major"
-      - dependency-name: eslint
-        update-types:
-          - "version-update:semver-major"
     commit-message:
       # since a deps update is significant for this package,
       # don't use chore for non-dev updates
