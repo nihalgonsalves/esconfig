@@ -9,9 +9,11 @@ import reactHooks from "eslint-plugin-react-hooks";
 import tseslint from "typescript-eslint";
 
 import sharedConfig from "./eslint.config.shared.js";
+
 /** @type {Record<string, any>} */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
 const reactRules = react.config.recommended.rules;
+
 export default tseslint.config(
   ...sharedConfig,
   {
