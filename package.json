@@ -22,7 +22,7 @@
     "format:check": "prettier . --check"
   },
   "dependencies": {
-    "@eslint/js": "^9.8.0",
+    "@eslint/js": "^9.9.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.9.0",
@@ -34,15 +34,15 @@
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@types/eslint__js": "^8.42.3",
-    "@types/node": "^22.1.0",
-    "eslint": "^9.8.0",
+    "@types/node": "^22.2.0",
+    "eslint": "^9.9.0",
     "knip": "^5.27.2",
     "lefthook": "^1.7.12",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4"
   },
   "peerDependencies": {
-    "eslint": "^9.8.0",
+    "eslint": "^9.9.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.1"
   }
