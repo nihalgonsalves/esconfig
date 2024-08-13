@@ -12,7 +12,7 @@ import sharedConfig from "./eslint.config.shared.js";
 
 /** @type {Record<string, any>} */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-const reactRules = react.config.recommended.rules;
+const reactRules = react.configs.recommended.rules;
 
 export default tseslint.config(
   ...sharedConfig,
@@ -92,14 +92,8 @@ export default tseslint.config(
         "error",
         { ignorePureComponents: true },
       ],
-      "react/prop-types": [
-        "error",
-        {
-          ignore: [],
-          customValidators: [],
-          skipUndeclared: false,
-        },
-      ],
+      // TypeScript
+      "react/prop-types": ["off"],
       "react/require-render-return": "error",
       "react/self-closing-comp": "error",
       "react/sort-comp": [
