@@ -30,11 +30,11 @@ Shared ECMAScript Config (TS, Lint, Prettier)
 
    import sharedConfig from "@nihalgonsalves/esconfig/eslint.config.shared";
 
-   export default tseslint.config([
+   export default tseslint.config(
      { ignores: [] },
      ...sharedConfig,
      // ... others
-   ]);
+   );
    ```
 
    If you're using React:
@@ -44,11 +44,11 @@ Shared ECMAScript Config (TS, Lint, Prettier)
 
    import sharedConfig from "@nihalgonsalves/esconfig/eslint.config.react-shared";
 
-   export default tseslint.config([
+   export default tseslint.config(
      { ignores: [] },
      ...sharedConfig,
      // ... others
-   ]);
+   );
    ```
 
 4. `package.json`
