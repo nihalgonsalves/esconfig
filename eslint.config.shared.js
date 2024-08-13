@@ -104,11 +104,12 @@ export default tseslint.config(
             "**/*{.,_}{test,spec}.{js,jsx}",
             "**/*{.,_}{test,spec}.{ts,tsx}",
             "**/*.config.{js,ts,cjs,mjs,cts,mts}",
+            "**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)",
           ],
           optionalDependencies: false,
         },
       ],
-      "import/no-default-export": "error",
+      "import/no-default-export": ["error"],
       "import/order": [
         "error",
         {
@@ -157,15 +158,24 @@ export default tseslint.config(
           assertionStyle: "never",
         },
       ],
+      "@typescript-eslint/prefer-nullish-coalescing": [
+        "error",
+        { ignorePrimitives: { boolean: true, string: true } },
+      ],
       "@typescript-eslint/strict-boolean-expressions": [
         "error",
         { allowNullableBoolean: true, allowNullableString: true },
+      ],
+      "@typescript-eslint/restrict-template-expressions": [
+        "error",
+        { allowNumber: true },
       ],
       "@typescript-eslint/promise-function-async": "error",
       "@typescript-eslint/method-signature-style": "error",
       "@typescript-eslint/no-import-type-side-effects": "error",
       "@typescript-eslint/require-array-sort-compare": "error",
       "@typescript-eslint/switch-exhaustiveness-check": "error",
+      "@typescript-eslint/require-await": "off",
     },
     settings: {
       "import/extensions": [
