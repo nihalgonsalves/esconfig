@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.4](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.3...esconfig-v0.10.4) (2024-08-13)
+
+
+### Bug Fixes
+
+* react plugin rules and prop-types setting ([8be2812](https://github.com/nihalgonsalves/esconfig/commit/8be2812a31bcde3f5b34e6950bfd135ea5174466))
+* tweak strictness of ts-eslint rules ([376a7ad](https://github.com/nihalgonsalves/esconfig/commit/376a7adbe33a2206dc10318028073dc7219a5665))
+
 ## [0.10.3](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.2...esconfig-v0.10.3) (2024-08-12)
 
 
