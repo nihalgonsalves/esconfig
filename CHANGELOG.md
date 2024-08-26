@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.6](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.5...esconfig-v0.10.6) (2024-08-26)
+
+
+### Features
+
+* **deps:** bump micromatch from 4.0.7 to 4.0.8 in the npm_and_yarn group ([#140](https://github.com/nihalgonsalves/esconfig/issues/140)) ([d1c5394](https://github.com/nihalgonsalves/esconfig/commit/d1c5394f88d20a73e6e3c2fd9c46f246bf916775))
+* **deps:** bump the all group with 5 updates ([#138](https://github.com/nihalgonsalves/esconfig/issues/138)) ([d439fdd](https://github.com/nihalgonsalves/esconfig/commit/d439fddc760e5f35bbc80705b26480ce51c9b2f2))
+
 ## [0.10.5](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.4...esconfig-v0.10.5) (2024-08-19)
 
 
