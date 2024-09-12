@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.9](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.8...esconfig-v0.10.9) (2024-09-12)
+
+
+### Features
+
+* **deps:** upgrade all ([d99b8d6](https://github.com/nihalgonsalves/esconfig/commit/d99b8d6bd7d9c1f30f3f83a4235f737864f4bf38))
+* **ts:** turn on noUncheckedSideEffectImports ([e186100](https://github.com/nihalgonsalves/esconfig/commit/e18610056a5d52ae8a5288a80d73b538c34799d7))
+
 ## [0.10.8](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.7...esconfig-v0.10.8) (2024-09-09)
 
 
