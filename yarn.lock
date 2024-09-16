@@ -316,14 +316,14 @@ __metadata:
     "@commitlint/config-conventional": "npm:^19.5.0"
     "@eslint/js": "npm:^9.10.0"
     "@types/eslint__js": "npm:^8.42.3"
-    "@types/node": "npm:^22.5.4"
+    "@types/node": "npm:^22.5.5"
     eslint: "npm:^9.10.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-import: "npm:^2.30.0"
     eslint-plugin-jsx-a11y: "npm:^6.10.0"
     eslint-plugin-react: "npm:^7.36.1"
     eslint-plugin-react-hooks: "npm:^4.6.2"
-    knip: "npm:^5.30.1"
+    knip: "npm:^5.30.2"
     lefthook: "npm:^1.7.15"
     prettier: "npm:^3.3.3"
     typescript: "npm:^5.6.2"
@@ -431,12 +431,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.5.4":
+"@types/node@npm:*":
   version: 22.5.4
   resolution: "@types/node@npm:22.5.4"
   dependencies:
     undici-types: "npm:~6.19.2"
   checksum: 10c0/b445daa7eecd761ad4d778b882d6ff7bcc3b4baad2086ea9804db7c5d4a4ab0298b00d7f5315fc640a73b5a1d52bbf9628e09c9fec0cf44dbf9b4df674a8717d
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^22.5.5":
+  version: 22.5.5
+  resolution: "@types/node@npm:22.5.5"
+  dependencies:
+    undici-types: "npm:~6.19.2"
+  checksum: 10c0/ead9495cfc6b1da5e7025856dcce2591e9bae635357410c0d2dd619fce797d2a1d402887580ca4b336cb78168b195224869967de370a23f61663cf1e4836121c
   languageName: node
   linkType: hard
 
@@ -2414,9 +2423,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"knip@npm:^5.30.1":
-  version: 5.30.1
-  resolution: "knip@npm:5.30.1"
+"knip@npm:^5.30.2":
+  version: 5.30.2
+  resolution: "knip@npm:5.30.2"
   dependencies:
     "@nodelib/fs.walk": "npm:1.2.8"
     "@snyk/github-codeowners": "npm:1.1.0"
@@ -2440,7 +2449,7 @@ __metadata:
   bin:
     knip: bin/knip.js
     knip-bun: bin/knip-bun.js
-  checksum: 10c0/1c470266d7967dad0f2fb1b1f6c8a797bc7bea6c1f0021c52dce40e067ae87217eb17ff11a4164e3a5244bf3d0672f9e8678e4c3898260c48b9c020132ebb29a
+  checksum: 10c0/c1fc1b45c17c1f8478cd1bd60749b44bf83375c579f6ee77b037b9ef8adf5ef21d4ba483be438bbfa621fac0b85acc27666b0e5085f633e1458c0d6326093995
   languageName: node
   linkType: hard
 
