@@ -2,7 +2,6 @@
 import prettierConfig from "eslint-config-prettier";
 // @ts-expect-error no types
 import jsxA11y from "eslint-plugin-jsx-a11y";
-// @ts-expect-error no types
 import react from "eslint-plugin-react";
 // @ts-expect-error no types
 import reactHooks from "eslint-plugin-react-hooks";
@@ -10,16 +9,13 @@ import tseslint from "typescript-eslint";
 
 import sharedConfig from "./eslint.config.shared.js";
 
-/** @type {Record<string, any>} */
-// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-const reactRules = react.configs.recommended.rules;
-
 export default tseslint.config(
   ...sharedConfig,
+  // @ts-expect-error wrong types
+  react.configs.flat.recommended,
+  react.configs.flat["jsx-runtime"],
   {
     plugins: {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      react,
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       "react-hooks": reactHooks,
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
@@ -29,7 +25,6 @@ export default tseslint.config(
       react: { version: "detect" },
     },
     rules: {
-      ...reactRules,
       "react/react-in-jsx-scope": "off",
       "react/checked-requires-onchange-or-readonly": [
         "off",
