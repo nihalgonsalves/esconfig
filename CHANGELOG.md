@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.12](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.11...esconfig-v0.10.12) (2024-10-14)
+
+
+### Features
+
+* **deps:** bump the all group with 5 updates ([#152](https://github.com/nihalgonsalves/esconfig/issues/152)) ([bb7e59d](https://github.com/nihalgonsalves/esconfig/commit/bb7e59d25966fc85d111060fc0bd919ad7d2c67a))
+
 ## [0.10.11](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.10...esconfig-v0.10.11) (2024-10-08)
 
 
