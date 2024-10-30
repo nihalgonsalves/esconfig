@@ -13,6 +13,7 @@ export default tseslint.config(
   ...sharedConfig,
   // @ts-expect-error wrong types
   react.configs.flat.recommended,
+  // @ts-expect-error wrong types
   react.configs.flat["jsx-runtime"],
   {
     plugins: {

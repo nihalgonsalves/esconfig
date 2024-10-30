@@ -7,7 +7,7 @@
   "author": "Nihal Gonsalves <nihal@nihalgonsalves.com>",
   "license": "MIT",
   "type": "module",
-  "packageManager": "yarn@4.5.0+sha512.837566d24eec14ec0f5f1411adb544e892b3454255e61fdef8fd05f3429480102806bac7446bc9daff3896b01ae4b62d00096c7e989f1596f2af10b927532f39",
+  "packageManager": "yarn@4.5.1+sha512.341db9396b6e289fecc30cd7ab3af65060e05ebff4b3b47547b278b9e67b08f485ecd8c79006b405446262142c7a38154445ef7f17c1d5d1de7d90bf9ce7054d",
   "files": [
     "eslint.config.shared.js",
     "eslint.config.shared.d.ts",
@@ -22,27 +22,27 @@
     "format:check": "prettier . --check"
   },
   "dependencies": {
-    "@eslint/js": "^9.12.0",
+    "@eslint/js": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
-    "typescript-eslint": "^8.8.1"
+    "typescript-eslint": "^8.11.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@types/eslint__js": "^8.42.3",
-    "@types/node": "^22.7.5",
-    "eslint": "^9.12.0",
-    "knip": "^5.33.3",
-    "lefthook": "^1.7.18",
+    "@types/node": "^22.8.1",
+    "eslint": "^9.13.0",
+    "knip": "^5.34.1",
+    "lefthook": "^1.8.1",
     "prettier": "^3.3.3",
     "typescript": "^5.6.3"
   },
   "peerDependencies": {
-    "eslint": "^9.12.0",
+    "eslint": "^9.13.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.4.0"
   }
