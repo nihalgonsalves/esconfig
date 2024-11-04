@@ -208,6 +208,12 @@ export default tseslint.config(
       },
     },
   },
+  {
+    files: ["**/*.config.*"],
+    rules: {
+      "import/no-default-export": "off",
+    },
+  },
   // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   prettierConfig,
 );
