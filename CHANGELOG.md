@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.14](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.13...esconfig-v0.10.14) (2024-11-04)
+
+
+### Bug Fixes
+
+* allow default exports in config ([#157](https://github.com/nihalgonsalves/esconfig/issues/157)) ([caa8b98](https://github.com/nihalgonsalves/esconfig/commit/caa8b9831743043809249e9e8cfc9388fa7fb81b))
+
 ## [0.10.13](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.12...esconfig-v0.10.13) (2024-10-30)
 
 
