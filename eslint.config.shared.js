@@ -44,12 +44,8 @@ export default tseslint.config(
       ],
       "@typescript-eslint/class-methods-use-this": "error",
       "@typescript-eslint/default-param-last": ["error"],
-      "@typescript-eslint/no-dupe-class-members": ["error"],
-      "@typescript-eslint/no-loss-of-precision": ["error"],
       "@typescript-eslint/no-loop-func": ["error"],
-      "@typescript-eslint/no-redeclare": ["error"],
       "@typescript-eslint/no-shadow": ["error"],
-      "@typescript-eslint/only-throw-error": ["error"],
       "@typescript-eslint/no-unused-expressions": [
         "error",
         {
@@ -76,7 +72,6 @@ export default tseslint.config(
           variables: true,
         },
       ],
-      "@typescript-eslint/return-await": ["error", "in-try-catch"],
       "import/extensions": [
         "error",
         "ignorePackages",
