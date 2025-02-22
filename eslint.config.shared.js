@@ -129,6 +129,8 @@ export default tseslint.config(
           alphabetize: { order: "asc" },
         },
       ],
+      "import/no-duplicates": ["error", { "prefer-inline": true }],
+      "import/no-unresolved": "off",
       "func-style": ["error", "expression"],
       "arrow-body-style": "error",
       "object-shorthand": "error",
@@ -136,6 +138,10 @@ export default tseslint.config(
       "@typescript-eslint/consistent-type-imports": [
         "error",
         { fixStyle: "inline-type-imports" },
+      ],
+      "@typescript-eslint/consistent-type-exports": [
+        "error",
+        { fixMixedExportsWithInlineTypeSpecifier: true },
       ],
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "@typescript-eslint/ban-ts-comment": [
@@ -169,8 +175,17 @@ export default tseslint.config(
       "@typescript-eslint/method-signature-style": "error",
       "@typescript-eslint/no-import-type-side-effects": "error",
       "@typescript-eslint/require-array-sort-compare": "error",
-      "@typescript-eslint/switch-exhaustiveness-check": "error",
+      "@typescript-eslint/switch-exhaustiveness-check": [
+        "error",
+        {
+          allowDefaultCaseForExhaustiveSwitch: true,
+          requireDefaultForNonUnion: true,
+          considerDefaultExhaustiveForUnions: false,
+        },
+      ],
       "@typescript-eslint/require-await": "off",
+      "@typescript-eslint/prefer-enum-initializers": "error",
+      "@typescript-eslint/consistent-return": "error",
     },
     settings: {
       "import/extensions": [
