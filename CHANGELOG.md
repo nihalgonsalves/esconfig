@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.23](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.22...esconfig-v0.10.23) (2025-02-22)
+
+
+### Features
+
+* add more tseslint rules ([39ba3cc](https://github.com/nihalgonsalves/esconfig/commit/39ba3ccc9d595ad260357d14ddc87cbfce981ef5))
+
 ## [0.10.22](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.21...esconfig-v0.10.22) (2025-02-17)
 
 
