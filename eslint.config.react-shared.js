@@ -3,7 +3,6 @@ import prettierConfig from "eslint-config-prettier";
 // @ts-expect-error no types
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import react from "eslint-plugin-react";
-// @ts-expect-error no types
 import reactHooks from "eslint-plugin-react-hooks";
 import tseslint from "typescript-eslint";
 
@@ -16,7 +15,6 @@ export default tseslint.config(
   react.configs.flat["jsx-runtime"],
   {
     plugins: {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       "react-hooks": reactHooks,
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       "jsx-a11y": jsxA11y,
