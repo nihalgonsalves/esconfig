@@ -1,5 +1,4 @@
 import js from "@eslint/js";
-// @ts-expect-error no types
 import prettierConfig from "eslint-config-prettier";
 // @ts-expect-error no types
 import importPlugin from "eslint-plugin-import";
@@ -224,6 +223,6 @@ export default tseslint.config(
       "import/no-default-export": "off",
     },
   },
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+
   prettierConfig,
 );
