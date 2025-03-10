@@ -23,7 +23,7 @@ Shared ECMAScript Config (TS, Lint, Prettier)
    }
    ```
 
-3. `eslint.config.mjs`
+3. `eslint.config.js`
 
    ```js
    import tseslint from "typescript-eslint";

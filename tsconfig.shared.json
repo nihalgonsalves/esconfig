@@ -1,29 +1,30 @@
 {
   "compilerOptions": {
-    "target": "es2022",
-    "module": "es2022",
+    "target": "ES2024",
+    "module": "Preserve",
     "moduleResolution": "Bundler",
     "moduleDetection": "force",
-
+    "strict": true,
     "types": [],
 
-    "sourceMap": true,
-    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "checkJs": true,
+    "erasableSyntaxOnly": true,
+    "esModuleInterop": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
     "incremental": true,
-
+    "isolatedDeclarations": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
+    "noUncheckedSideEffectImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noUncheckedSideEffectImports": true,
-    "exactOptionalPropertyTypes": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-
-    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
     "verbatimModuleSyntax": true
   }
 }
