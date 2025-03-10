@@ -1,4 +1,3 @@
-// @ts-expect-error no types
 import prettierConfig from "eslint-config-prettier";
 // @ts-expect-error no types
 import jsxA11y from "eslint-plugin-jsx-a11y";
@@ -384,6 +383,6 @@ export default tseslint.config(
       "jsx-a11y/tabindex-no-positive": "error",
     },
   },
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+
   prettierConfig,
 );
