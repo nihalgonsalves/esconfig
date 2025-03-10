@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.11.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.26...esconfig-v0.11.0) (2025-03-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* stricter tsconfig
+
+### Features
+
+* stricter tsconfig ([053eff6](https://github.com/nihalgonsalves/esconfig/commit/053eff61f60fcd424010526a0770a349b639fde1))
+
 ## [0.10.26](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.25...esconfig-v0.10.26) (2025-03-10)
 
 
