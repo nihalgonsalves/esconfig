@@ -1,17 +1,29 @@
+import vitest from "@vitest/eslint-plugin";
 import prettierConfig from "eslint-config-prettier";
+import jestDom from "eslint-plugin-jest-dom";
 // @ts-expect-error no types
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import react from "eslint-plugin-react";
+import reactCompiler from "eslint-plugin-react-compiler";
 import reactHooks from "eslint-plugin-react-hooks";
+import storybook from "eslint-plugin-storybook";
+import testingLibrary from "eslint-plugin-testing-library";
 import tseslint from "typescript-eslint";
 
 import sharedConfig from "./eslint.config.shared.js";
 
 export default tseslint.config(
   ...sharedConfig,
+  {
+    ignores: [
+      // https://github.com/storybookjs/eslint-plugin-storybook?tab=readme-ov-file#installation
+      "!**/*/.storybook",
+    ],
+  },
   // @ts-expect-error wrong types
   react.configs.flat.recommended,
   react.configs.flat["jsx-runtime"],
+  reactCompiler.configs.recommended,
   {
     plugins: {
       "react-hooks": reactHooks,
@@ -22,6 +34,41 @@ export default tseslint.config(
       react: { version: "detect" },
     },
     rules: {
+      "no-restricted-globals": [
+        "error",
+        {
+          name: "React",
+          message: 'import { ... } from "react" instead',
+        },
+        {
+          name: "location",
+          message:
+            "useLocation from your router package, or access window.location",
+        },
+      ],
+      "no-restricted-imports": [
+        "error",
+        {
+          paths: [
+            {
+              name: "react",
+              importNames: ["default"],
+              message: 'import { ... } from "react" instead',
+            },
+            // TODO: https://eslint-react.xyz has dedicated rules
+            {
+              name: "react",
+              importNames: ["useContext"],
+              message: "Use `use()` instead",
+            },
+            {
+              name: "react",
+              importNames: ["forwardRef"],
+              message: "Use a prop instead",
+            },
+          ],
+        },
+      ],
       "react/react-in-jsx-scope": "off",
       "react/checked-requires-onchange-or-readonly": [
         "off",
@@ -383,6 +430,59 @@ export default tseslint.config(
       "jsx-a11y/tabindex-no-positive": "error",
     },
   },
-
+  ...storybook.configs["flat/recommended"],
+  ...storybook.configs["flat/addon-interactions"],
+  ...storybook.configs["flat/csf-strict"],
+  {
+    files: [
+      "**/.storybook/**/*",
+      "**/*.test.@(ts|tsx|js|jsx|mjs|cjs)",
+      "**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)",
+    ],
+    extends: [
+      testingLibrary.configs["flat/react"],
+      vitest.configs.recommended,
+      jestDom.configs["flat/recommended"],
+    ],
+    rules: {
+      "vitest/consistent-test-filename": "error",
+      "vitest/consistent-test-it": [
+        "error",
+        { fn: "it", withinDescribe: "it" },
+      ],
+      "vitest/no-focused-tests": "error",
+      "vitest/no-test-prefixes": "error",
+      "vitest/padding-around-after-all-blocks": "error",
+      "vitest/padding-around-after-each-blocks": "error",
+      "vitest/padding-around-before-all-blocks": "error",
+      "vitest/padding-around-before-each-blocks": "error",
+      "vitest/padding-around-describe-blocks": "error",
+      "vitest/padding-around-test-blocks": "error",
+      "vitest/prefer-comparison-matcher": "error",
+      "vitest/prefer-each": "error",
+      "vitest/prefer-equality-matcher": "error",
+      "vitest/prefer-expect-resolves": "error",
+      "vitest/prefer-hooks-in-order": "error",
+      "vitest/prefer-hooks-on-top": "error",
+      "vitest/prefer-mock-promise-shorthand": "error",
+      "vitest/prefer-strict-equal": "error",
+      "vitest/prefer-to-be": "error",
+      "vitest/prefer-to-be-object": "error",
+      "vitest/prefer-to-contain": "error",
+      "vitest/prefer-to-have-length": "error",
+      "vitest/prefer-todo": "error",
+      "vitest/prefer-vi-mocked": "error",
+      "vitest/require-to-throw-message": "error",
+      "vitest/valid-expect-in-promise": "error",
+      "vitest/expect-expect": "error",
+    },
+  },
+  {
+    files: ["**/.storybook/**/*", "**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+    rules: {
+      "import/no-default-export": "off",
+    },
+  },
+  ...storybook.configs.recommended.overrides,
   prettierConfig,
 );
