@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.11.1](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.11.0...esconfig-v0.11.1) (2025-03-14)
+
+
+### Features
+
+* stricter react rules (vitest, storybook, …) ([de96138](https://github.com/nihalgonsalves/esconfig/commit/de9613811f013498f3c5292671fea246c0e45850))
+
 ## [0.11.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.10.26...esconfig-v0.11.0) (2025-03-10)
 
 
