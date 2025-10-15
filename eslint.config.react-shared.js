@@ -1,4 +1,5 @@
 import vitest from "@vitest/eslint-plugin";
+import { defineConfig } from "eslint/config";
 import prettierConfig from "eslint-config-prettier";
 import jestDom from "eslint-plugin-jest-dom";
 // @ts-expect-error no types
@@ -8,11 +9,10 @@ import reactCompiler from "eslint-plugin-react-compiler";
 import reactHooks from "eslint-plugin-react-hooks";
 import storybook from "eslint-plugin-storybook";
 import testingLibrary from "eslint-plugin-testing-library";
-import tseslint from "typescript-eslint";
 
 import sharedConfig from "./eslint.config.shared.js";
 
-export default tseslint.config(
+export default defineConfig(
   ...sharedConfig,
   {
     ignores: [

@@ -1,10 +1,10 @@
 import js from "@eslint/js";
+import { defineConfig } from "eslint/config";
 import prettierConfig from "eslint-config-prettier";
-// @ts-expect-error no types
 import importPlugin from "eslint-plugin-import";
 import tseslint from "typescript-eslint";
 
-export default tseslint.config(
+export default defineConfig(
   js.configs.recommended,
   // @ts-expect-error nullability
   {
@@ -22,7 +22,6 @@ export default tseslint.config(
       },
     },
     plugins: {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       import: importPlugin,
     },
     rules: {
