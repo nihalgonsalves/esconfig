@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.1](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.12.0...esconfig-v0.12.1) (2025-10-15)
+
+
+### Bug Fixes
+
+* publish config ([5239bad](https://github.com/nihalgonsalves/esconfig/commit/5239bad140377e0c4d34302b82f9d54a441b85f0))
+
 ## [0.12.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.11.2...esconfig-v0.12.0) (2025-10-15)
 
 
