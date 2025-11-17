@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.12.1...esconfig-v0.13.0) (2025-11-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** major version updates on eslint plugins
+
+### Features
+
+* **deps:** bump js-yaml from 4.1.0 to 4.1.1 ([#212](https://github.com/nihalgonsalves/esconfig/issues/212)) ([55ed8e3](https://github.com/nihalgonsalves/esconfig/commit/55ed8e3d489ee3e78d8d0de16db551c459467f36))
+* **deps:** bump the all group across 1 directory with 10 updates ([#214](https://github.com/nihalgonsalves/esconfig/issues/214)) ([0035c08](https://github.com/nihalgonsalves/esconfig/commit/0035c08ee45351c7f2c91f44bf083e43ebe8a568))
+
 ## [0.12.1](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.12.0...esconfig-v0.12.1) (2025-10-15)
 
 
