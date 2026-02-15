@@ -49,11 +49,11 @@
     "knip": "^5.83.1",
     "lefthook": "^2.1.1",
     "prettier": "^3.8.1",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.0-beta"
   },
   "peerDependencies": {
     "eslint": "^9.39.2",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.0-beta",
     "typescript-eslint": "^8.55.0"
   }
 }

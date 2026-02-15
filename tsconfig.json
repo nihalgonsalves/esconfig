@@ -3,10 +3,8 @@
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "moduleDetection": "force",
     "noEmit": true,
     "allowJs": true,
-    "checkJs": true,
     "types": ["node"]
   }
 }
