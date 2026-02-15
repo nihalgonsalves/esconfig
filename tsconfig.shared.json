@@ -1,16 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES2024",
+    "target": "ES2025",
     "module": "Preserve",
     "moduleResolution": "Bundler",
     "moduleDetection": "force",
-    "strict": true,
-    "types": [],
 
-    "allowSyntheticDefaultImports": true,
     "checkJs": true,
     "erasableSyntaxOnly": true,
-    "esModuleInterop": true,
     "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
@@ -20,7 +16,6 @@
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
-    "noUncheckedSideEffectImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "skipLibCheck": true,
