@@ -9,10 +9,9 @@ jobs:
       - run: corepack enable
       - uses: actions/setup-node@v6
         with:
-          node-version: 20
-          cache: "yarn"
-      - run: yarn install --immutable
-      - run: yarn lint
-      - run: yarn typecheck
-      - run: yarn format:check
-      - run: yarn knip
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: node --run lint
+      - run: node --run typecheck
+      - run: node --run format:check

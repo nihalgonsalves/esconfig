@@ -7,7 +7,7 @@ Shared ECMAScript Config (TS, Lint, Prettier)
 1. Install
 
    ```sh
-   yarn add -D @nihalgonsalves/esconfig typescript typescript-eslint eslint prettier
+   pnpm add -D @nihalgonsalves/esconfig typescript typescript-eslint eslint prettier
    ```
 
 2. `tsconfig.json`
