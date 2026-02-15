@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.6](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.13.5...esconfig-v0.13.6) (2026-02-15)
+
+
+### Features
+
+* update all, use pnpm ([#233](https://github.com/nihalgonsalves/esconfig/issues/233)) ([e3cdb88](https://github.com/nihalgonsalves/esconfig/commit/e3cdb88f35abab2baeb6791595a1532749b5ce4a))
+
 ## [0.13.5](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.13.4...esconfig-v0.13.5) (2026-02-02)
 
 
