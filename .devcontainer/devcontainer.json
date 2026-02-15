@@ -8,6 +8,6 @@
       "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
     }
   },
-  "onCreateCommand": "yarn install",
+  "onCreateCommand": "pnpm install",
   "remoteUser": "node"
 }
