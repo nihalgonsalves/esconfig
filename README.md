@@ -1,13 +1,15 @@
 # esconfig
 
-Shared ECMAScript Config (TS, Lint, Prettier)
+Shared ECMAScript Config (TypeScript, oxlint, oxfmt, optional eslint)
 
 ## Usage
 
 1. Install
 
    ```sh
-   pnpm add -D @nihalgonsalves/esconfig typescript typescript-eslint eslint prettier
+   pnpm add -D @nihalgonsalves/esconfig typescript oxlint oxlint-tsgolint oxfmt
+   # optionally for react:
+   pnpm add -D eslint
    ```
 
 2. `tsconfig.json`
@@ -23,21 +25,17 @@ Shared ECMAScript Config (TS, Lint, Prettier)
    }
    ```
 
-3. `eslint.config.js`
+3. copy [`.oxlintrc.json`](./.oxlintrc.json)
 
-   ```js
-   import tseslint from "typescript-eslint";
+4. `.oxlintrc.json`
 
-   import sharedConfig from "@nihalgonsalves/esconfig/eslint.config.shared";
-
-   export default tseslint.config(
-     { ignores: [] },
-     ...sharedConfig,
-     // ... others
-   );
+   ```json
+   {
+     "extends": ["node_modules/@nihalgonsalves/esconfig/.oxlintrc.json"]
+   }
    ```
 
-   If you're using React:
+5. If you're using React, `eslint.config.js`:
 
    ```js
    import tseslint from "typescript-eslint";
@@ -51,17 +49,17 @@ Shared ECMAScript Config (TS, Lint, Prettier)
    );
    ```
 
-4. `package.json`
+6. `package.json`
 
    ```json
    {
      "scripts": {
        "build": "tsc",
-       "lint": "eslint ./src/",
-       "format": "prettier . --write",
-       "format:check": "prettier . --check"
+       "lint": "oxlint --type-aware && eslint ./src/",
+       "format": "oxfmt",
+       "format:check": "oxfmt --check"
      }
    }
    ```
 
-5. Done! Don't forget to run `build`, `lint` and `format:check` in your CI workflow.
+7. Done! Don't forget to run `build`, `lint` and `format:check` in your CI workflow.

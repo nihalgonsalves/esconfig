@@ -1,19 +1,15 @@
 import vitest from "@vitest/eslint-plugin";
-import { defineConfig } from "eslint/config";
 import prettierConfig from "eslint-config-prettier";
 import jestDom from "eslint-plugin-jest-dom";
 // @ts-expect-error no types
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import react from "eslint-plugin-react";
-import reactCompiler from "eslint-plugin-react-compiler";
 import reactHooks from "eslint-plugin-react-hooks";
-import storybook from "eslint-plugin-storybook";
+import { configs as storybookConfigs } from "eslint-plugin-storybook";
 import testingLibrary from "eslint-plugin-testing-library";
-
-import sharedConfig from "./eslint.config.shared.js";
+import { defineConfig } from "eslint/config";
 
 export default defineConfig(
-  ...sharedConfig,
   {
     ignores: [
       // https://github.com/storybookjs/eslint-plugin-storybook?tab=readme-ov-file#installation
@@ -21,9 +17,9 @@ export default defineConfig(
     ],
   },
   // @ts-expect-error wrong types
-  react.configs.flat.recommended,
+  react.configs.flat["recommended-latest"],
   react.configs.flat["jsx-runtime"],
-  reactCompiler.configs.recommended,
+  reactHooks.configs["recommended-latest"],
   {
     plugins: {
       "react-hooks": reactHooks,
@@ -42,8 +38,7 @@ export default defineConfig(
         },
         {
           name: "location",
-          message:
-            "useLocation from your router package, or access window.location",
+          message: "useLocation from your router package, or access window.location",
         },
       ],
       "no-restricted-imports": [
@@ -127,10 +122,7 @@ export default defineConfig(
       "react/no-multi-comp": "off",
       "react/no-set-state": "off",
       "react/prefer-es6-class": ["error", "always"],
-      "react/prefer-stateless-function": [
-        "error",
-        { ignorePureComponents: true },
-      ],
+      "react/prefer-stateless-function": ["error", { ignorePureComponents: true }],
       // TypeScript
       "react/prop-types": ["off"],
       "react/require-render-return": "error",
@@ -187,10 +179,7 @@ export default defineConfig(
       "react/jsx-first-prop-new-line": ["error", "multiline-multiprop"],
       "react/jsx-equals-spacing": ["error", "never"],
       "react/jsx-indent": ["error", 2],
-      "react/jsx-filename-extension": [
-        "error",
-        { extensions: [".jsx", ".tsx"] },
-      ],
+      "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".tsx"] }],
       "react/require-optimization": ["off", { allowDecorators: [] }],
       "react/forbid-component-props": ["off", { forbid: [] }],
       "react/forbid-elements": ["off", { forbid: [] }],
@@ -204,16 +193,10 @@ export default defineConfig(
       "react/style-prop-object": "error",
       "react/no-array-index-key": "error",
       "react/void-dom-elements-no-children": "error",
-      "react/default-props-match-prop-types": [
-        "error",
-        { allowRequiredDefaults: false },
-      ],
+      "react/default-props-match-prop-types": ["error", { allowRequiredDefaults: false }],
       "react/no-redundant-should-component-update": "error",
       "react/no-unused-state": "error",
-      "react/jsx-curly-brace-presence": [
-        "error",
-        { props: "never", children: "never" },
-      ],
+      "react/jsx-curly-brace-presence": ["error", { props: "never", children: "never" }],
       "react/destructuring-assignment": ["error", "always"],
       "react/no-access-state-in-setstate": "error",
       "react/button-has-type": [
@@ -295,15 +278,7 @@ export default defineConfig(
         {
           labelAttributes: ["label"],
           controlComponents: [],
-          ignoreElements: [
-            "audio",
-            "canvas",
-            "embed",
-            "input",
-            "textarea",
-            "tr",
-            "video",
-          ],
+          ignoreElements: ["audio", "canvas", "embed", "input", "textarea", "tr", "video"],
           ignoreRoles: [
             "grid",
             "listbox",
@@ -361,37 +336,14 @@ export default defineConfig(
       "jsx-a11y/no-noninteractive-element-interactions": [
         "error",
         {
-          handlers: [
-            "onClick",
-            "onMouseDown",
-            "onMouseUp",
-            "onKeyPress",
-            "onKeyDown",
-            "onKeyUp",
-          ],
+          handlers: ["onClick", "onMouseDown", "onMouseUp", "onKeyPress", "onKeyDown", "onKeyUp"],
         },
       ],
       "jsx-a11y/no-noninteractive-element-to-interactive-role": [
         "error",
         {
-          ul: [
-            "listbox",
-            "menu",
-            "menubar",
-            "radiogroup",
-            "tablist",
-            "tree",
-            "treegrid",
-          ],
-          ol: [
-            "listbox",
-            "menu",
-            "menubar",
-            "radiogroup",
-            "tablist",
-            "tree",
-            "treegrid",
-          ],
+          ul: ["listbox", "menu", "menubar", "radiogroup", "tablist", "tree", "treegrid"],
+          ol: ["listbox", "menu", "menubar", "radiogroup", "tablist", "tree", "treegrid"],
           li: ["menuitem", "option", "row", "tab", "treeitem"],
           table: ["grid"],
           td: ["gridcell"],
@@ -414,14 +366,7 @@ export default defineConfig(
       "jsx-a11y/no-static-element-interactions": [
         "error",
         {
-          handlers: [
-            "onClick",
-            "onMouseDown",
-            "onMouseUp",
-            "onKeyPress",
-            "onKeyDown",
-            "onKeyUp",
-          ],
+          handlers: ["onClick", "onMouseDown", "onMouseUp", "onKeyPress", "onKeyDown", "onKeyUp"],
         },
       ],
       "jsx-a11y/role-has-required-aria-props": "error",
@@ -430,9 +375,9 @@ export default defineConfig(
       "jsx-a11y/tabindex-no-positive": "error",
     },
   },
-  ...storybook.configs["flat/recommended"],
-  ...storybook.configs["flat/addon-interactions"],
-  ...storybook.configs["flat/csf-strict"],
+  ...storybookConfigs["flat/recommended"],
+  ...storybookConfigs["flat/addon-interactions"],
+  ...storybookConfigs["flat/csf-strict"],
   {
     files: [
       "**/.storybook/**/*",
@@ -446,10 +391,7 @@ export default defineConfig(
     ],
     rules: {
       "vitest/consistent-test-filename": "error",
-      "vitest/consistent-test-it": [
-        "error",
-        { fn: "it", withinDescribe: "it" },
-      ],
+      "vitest/consistent-test-it": ["error", { fn: "it", withinDescribe: "it" }],
       "vitest/no-focused-tests": "error",
       "vitest/no-test-prefixes": "error",
       "vitest/padding-around-after-all-blocks": "error",
@@ -483,6 +425,6 @@ export default defineConfig(
       "import/no-default-export": "off",
     },
   },
-  ...storybook.configs.recommended.overrides,
+  ...storybookConfigs.recommended.overrides,
   prettierConfig,
 );
