@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.1](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.14.0...esconfig-v0.14.1) (2026-02-16)
+
+
+### Features
+
+* add oxlint perf category ([5ca515c](https://github.com/nihalgonsalves/esconfig/commit/5ca515cccf18ea97b340c2a0e4ba0c7d1e59b9a0))
+
+
+### Bug Fixes
+
+* loosen consistent-type-assertions as typescript/no-unsafe-type-assertion is enabled ([e258d30](https://github.com/nihalgonsalves/esconfig/commit/e258d303992b4d6c6383bfa720d76a9d7a34be34))
+
 ## [0.14.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.13.6...esconfig-v0.14.0) (2026-02-16)
 
 
