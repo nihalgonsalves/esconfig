@@ -55,7 +55,7 @@ Shared ECMAScript Config (TypeScript, oxlint, oxfmt, optional eslint)
    {
      "scripts": {
        "build": "tsc",
-       "lint": "oxlint --type-aware && eslint ./src/",
+       "lint": "oxlint --type-aware --report-unused-disable-directives-severity=error && eslint ./src/",
        "format": "oxfmt",
        "format:check": "oxfmt --check"
      }

@@ -22,7 +22,7 @@
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "lint": "oxlint --type-aware . && knip",
+    "lint": "oxlint --type-aware --report-unused-disable-directives-severity=error && knip",
     "format": "oxfmt",
     "format:check": "oxfmt --check"
   },
