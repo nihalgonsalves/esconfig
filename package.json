@@ -1,6 +1,6 @@
 {
   "name": "@nihalgonsalves/esconfig",
-  "version": "0.14.1",
+  "version": "0.15.0",
   "description": "Shared ECMAScript Config (TypeScript, oxlint, oxfmt, eslint)",
   "license": "MIT",
   "author": "Nihal Gonsalves <nihal@nihalgonsalves.com>",
