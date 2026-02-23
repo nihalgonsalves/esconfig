@@ -33,25 +33,25 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-storybook": "^10.2.8",
-    "eslint-plugin-testing-library": "^7.15.4"
+    "eslint-plugin-storybook": "^10.2.10",
+    "eslint-plugin-testing-library": "^7.16.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.4.1",
-    "@commitlint/config-conventional": "^20.4.1",
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
     "@types/node": "^24.10.13",
-    "eslint": "^9.39.2",
-    "knip": "^5.83.1",
+    "eslint": "^10.0.1",
+    "knip": "^5.85.0",
     "lefthook": "^2.1.1",
-    "oxfmt": "^0.33.0",
-    "oxlint": "^1.48.0",
-    "oxlint-tsgolint": "^0.14.0",
+    "oxfmt": "^0.35.0",
+    "oxlint": "^1.50.0",
+    "oxlint-tsgolint": "^0.14.2",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "eslint": "^9.39.2",
-    "oxlint": "^1.48.0",
-    "oxlint-tsgolint": "^0.14.0",
+    "eslint": "^10.0.1",
+    "oxlint": "^1.50.0",
+    "oxlint-tsgolint": "^0.14.2",
     "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.29.3+sha512.498e1fb4cca5aa06c1dcf2611e6fafc50972ffe7189998c409e90de74566444298ffe43e6cd2acdc775ba1aa7cc5e092a8b7054c811ba8c5770f84693d33d2dc"
