@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.15.0...esconfig-v0.16.0) (2026-02-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* move react config to oxlint
+
+### Features
+
+* move react config to oxlint ([df832c7](https://github.com/nihalgonsalves/esconfig/commit/df832c7b3989d923eac867f5b5acab5e41e3c911))
+
 ## [0.15.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.14.1...esconfig-v0.15.0) (2026-02-23)
 
 
