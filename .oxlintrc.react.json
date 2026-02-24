@@ -1,0 +1,392 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "perf": "error"
+  },
+  "env": {
+    "builtin": true
+  },
+  "plugins": ["react", "jsx-a11y"],
+  "jsPlugins": [{ "name": "react-hooks-js", "specifier": "eslint-plugin-react-hooks" }],
+  "rules": {
+    "no-restricted-globals": [
+      "error",
+      {
+        "name": "React",
+        "message": "import { ... } from \"react\" instead"
+      },
+      {
+        "name": "location",
+        "message": "useLocation from your router package, or access window.location"
+      }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "react",
+            "importNames": ["default"],
+            "message": "import { ... } from \"react\" instead"
+          },
+          {
+            "name": "react",
+            "importNames": ["useContext"],
+            "message": "Use `use()` instead"
+          },
+          {
+            "name": "react",
+            "importNames": ["forwardRef"],
+            "message": "Use a ref prop instead"
+          }
+        ]
+      }
+    ],
+
+    // eslint-plugin-react recommended + jsx-runtime rules
+    "react/display-name": "error",
+    // "react/jsx-key": "error",
+    "react/jsx-no-comment-textnodes": "error",
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-target-blank": "error",
+    "react/jsx-no-undef": "error",
+    "react/no-children-prop": "error",
+    "react/no-danger-with-children": "error",
+    "react/no-direct-mutation-state": "error",
+    "react/no-find-dom-node": "error",
+    "react/no-is-mounted": "error",
+    "react/no-render-return-value": "error",
+    "react/no-string-refs": "error",
+    "react/no-unescaped-entities": "error",
+    "react/no-unknown-property": "error",
+    "react/require-render-return": "error",
+    "react-hooks/rules-of-hooks": "error",
+    // "react-hooks/exhaustive-deps": "warn",
+
+    // custom react
+    "react/jsx-boolean-value": [
+      "error",
+      "never",
+      {
+        "always": []
+      }
+    ],
+    "react/jsx-pascal-case": [
+      "error",
+      {
+        "allowAllCaps": true,
+        "ignore": []
+      }
+    ],
+    "react/no-danger": "warn",
+    "react/no-will-update-set-state": "error",
+    "react/prefer-es6-class": ["error", "always"],
+    "react/self-closing-comp": "error",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    "react/style-prop-object": "error",
+    "react/no-array-index-key": "error",
+    "react/void-dom-elements-no-children": "error",
+    "react/no-redundant-should-component-update": "error",
+    "react/jsx-curly-brace-presence": [
+      "error",
+      {
+        "props": "never",
+        "children": "never"
+      }
+    ],
+    "react/button-has-type": [
+      "error",
+      {
+        "button": true,
+        "submit": true,
+        "reset": false
+      }
+    ],
+    "react/no-this-in-sfc": "error",
+    "react/jsx-fragments": ["error", "syntax"],
+    "react/state-in-constructor": ["error", "never"],
+    "react/jsx-no-script-url": [
+      "error",
+      [
+        {
+          "name": "Link",
+          "props": ["to"]
+        }
+      ]
+    ],
+    "react/jsx-no-useless-fragment": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "react/jsx-no-constructed-context-values": "error",
+    "react/no-namespace": "error",
+    "react/iframe-missing-sandbox": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react/jsx-key": [
+      "error",
+      {
+        "checkFragmentShorthand": true,
+        "checkKeyMustBeforeSpread": true,
+        "warnOnDuplicates": true
+      }
+    ],
+    // not implemented in oxlint yet:
+    // - react/jsx-no-bind
+    // - react/no-did-update-set-state
+    // - react/prefer-stateless-function
+    // - react/destructuring-assignment
+    // - react/no-unstable-nested-components
+    // - react/no-arrow-function-lifecycle
+    // - react/no-invalid-html-attribute
+    // - react/hook-use-state
+    // - react/jsx-no-leaked-render
+
+    // react-compiler
+    // https://github.com/oxc-project/oxc/issues/10048
+    "react-hooks-js/set-state-in-effect": "error",
+    "react-hooks-js/preserve-manual-memoization": "error",
+    "react-hooks-js/refs": "error",
+    "react-hooks-js/immutability": "error",
+    "react-hooks-js/error-boundaries": "error",
+
+    // custom jsx-a11y rules
+    "jsx-a11y/alt-text": [
+      "error",
+      {
+        "elements": ["img", "object", "area", "input[type=\"image\"]"],
+        "img": [],
+        "object": [],
+        "area": [],
+        "input[type=\"image\"]": []
+      }
+    ],
+    "jsx-a11y/anchor-has-content": "error",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
+    "jsx-a11y/aria-activedescendant-has-tabindex": "error",
+    "jsx-a11y/aria-props": "error",
+    "jsx-a11y/aria-proptypes": "error",
+    "jsx-a11y/aria-role": [
+      "error",
+      {
+        "ignoreNonDOM": false
+      }
+    ],
+    "jsx-a11y/aria-unsupported-elements": "error",
+    "jsx-a11y/autocomplete-valid": [
+      "error",
+      {
+        "inputComponents": []
+      }
+    ],
+    "jsx-a11y/click-events-have-key-events": "error",
+    "jsx-a11y/heading-has-content": [
+      "error",
+      {
+        "components": [""]
+      }
+    ],
+    "jsx-a11y/html-has-lang": "error",
+    "jsx-a11y/iframe-has-title": "error",
+    "jsx-a11y/img-redundant-alt": "error",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "labelComponents": [],
+        "labelAttributes": [],
+        "controlComponents": [],
+        "assert": "both",
+        "depth": 25
+      }
+    ],
+    "jsx-a11y/lang": "error",
+    "jsx-a11y/media-has-caption": [
+      "error",
+      {
+        "audio": [],
+        "video": [],
+        "track": []
+      }
+    ],
+    "jsx-a11y/mouse-events-have-key-events": "error",
+    "jsx-a11y/no-access-key": "error",
+    "jsx-a11y/no-autofocus": [
+      "error",
+      {
+        "ignoreNonDOM": true
+      }
+    ],
+    "jsx-a11y/no-distracting-elements": [
+      "error",
+      {
+        "elements": ["marquee", "blink"]
+      }
+    ],
+    "jsx-a11y/no-noninteractive-tabindex": [
+      "error",
+      {
+        "tags": [],
+        "roles": ["tabpanel"],
+        "allowExpressionValues": true
+      }
+    ],
+    "jsx-a11y/no-redundant-roles": "error",
+    "jsx-a11y/no-static-element-interactions": [
+      "error",
+      {
+        "handlers": ["onClick", "onMouseDown", "onMouseUp", "onKeyPress", "onKeyDown", "onKeyUp"]
+      }
+    ],
+    "jsx-a11y/role-has-required-aria-props": "error",
+    "jsx-a11y/role-supports-aria-props": "error",
+    "jsx-a11y/scope": "error",
+    "jsx-a11y/tabindex-no-positive": "error"
+    // not implemented in oxlint yet:
+    // - jsx-a11y/control-has-associated-label
+    // - jsx-a11y/interactive-supports-focus
+    // - jsx-a11y/no-interactive-element-to-noninteractive-role
+    // - jsx-a11y/no-noninteractive-element-interactions
+    // - jsx-a11y/no-noninteractive-element-to-interactive-role
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.{ts,tsx,js,jsx,mjs,cjs}", "**/*.stories.{ts,tsx,js,jsx,mjs,cjs}"],
+      "plugins": ["vitest"],
+      "jsPlugins": ["eslint-plugin-jest-dom", "eslint-plugin-testing-library"],
+      "rules": {
+        // Vitest recommended
+        "vitest/expect-expect": "error",
+        "vitest/no-conditional-expect": "error",
+        "vitest/no-disabled-tests": "warn",
+        "vitest/no-focused-tests": "error",
+        "vitest/no-commented-out-tests": "error",
+        "vitest/no-identical-title": "error",
+        "vitest/no-import-node-test": "error",
+        "vitest/no-interpolation-in-snapshots": "error",
+        "vitest/no-mocks-import": "error",
+        "vitest/no-standalone-expect": "error",
+        "vitest/no-unneeded-async-expect-function": "error",
+        "vitest/require-local-test-context-for-concurrent-snapshots": "error",
+        "vitest/valid-describe-callback": "error",
+        "vitest/valid-expect": "error",
+
+        // Vitest custom
+        "vitest/consistent-test-filename": "error",
+        "vitest/consistent-test-it": [
+          "error",
+          {
+            "fn": "it",
+            "withinDescribe": "it"
+          }
+        ],
+        "vitest/no-test-prefixes": "error",
+        "vitest/prefer-comparison-matcher": "error",
+        "vitest/prefer-each": "error",
+        "vitest/prefer-equality-matcher": "error",
+        "vitest/prefer-expect-resolves": "error",
+        "vitest/prefer-hooks-in-order": "error",
+        "vitest/prefer-hooks-on-top": "error",
+        "vitest/prefer-mock-promise-shorthand": "error",
+        "vitest/prefer-strict-equal": "error",
+        "vitest/prefer-to-be": "error",
+        "vitest/prefer-to-be-object": "error",
+        "vitest/prefer-to-contain": "error",
+        "vitest/prefer-to-have-length": "error",
+        "vitest/prefer-todo": "error",
+        "vitest/require-to-throw-message": "error",
+        // not implemented in oxlint yet:
+        // - vitest/prefer-called-exactly-once-with
+        // - vitest/valid-expect-in-promise
+        // - vitest/valid-title
+        // - vitest/padding-around-after-all-blocks
+        // - vitest/padding-around-after-each-blocks
+        // - vitest/padding-around-before-all-blocks
+        // - vitest/padding-around-before-each-blocks
+        // - vitest/padding-around-describe-blocks
+        // - vitest/padding-around-test-blocks
+        // - vitest/prefer-vi-mocked
+
+        // jest-dom recommended
+        "jest-dom/prefer-checked": "error",
+        "jest-dom/prefer-empty": "error",
+        "jest-dom/prefer-enabled-disabled": "error",
+        "jest-dom/prefer-focus": "error",
+        "jest-dom/prefer-in-document": "error",
+        "jest-dom/prefer-required": "error",
+        "jest-dom/prefer-to-have-attribute": "error",
+        "jest-dom/prefer-to-have-class": "error",
+        "jest-dom/prefer-to-have-style": "error",
+        "jest-dom/prefer-to-have-text-content": "error",
+        "jest-dom/prefer-to-have-value": "error",
+
+        // testing-library recommended
+        "testing-library/await-async-events": [
+          "error",
+          {
+            "eventModule": "userEvent"
+          }
+        ],
+        "testing-library/await-async-queries": "error",
+        "testing-library/await-async-utils": "error",
+        "testing-library/no-await-sync-events": [
+          "error",
+          {
+            "eventModules": ["fire-event"]
+          }
+        ],
+        "testing-library/no-await-sync-queries": "error",
+        "testing-library/no-container": "error",
+        "testing-library/no-debugging-utils": "warn",
+        "testing-library/no-dom-import": ["error", "react"],
+        "testing-library/no-global-regexp-flag-in-query": "error",
+        "testing-library/no-manual-cleanup": "error",
+        "testing-library/no-node-access": "error",
+        "testing-library/no-promise-in-fire-event": "error",
+        "testing-library/no-render-in-lifecycle": "error",
+        "testing-library/no-unnecessary-act": "error",
+        "testing-library/no-wait-for-multiple-assertions": "error",
+        "testing-library/no-wait-for-side-effects": "error",
+        "testing-library/no-wait-for-snapshot": "error",
+        "testing-library/prefer-find-by": "error",
+        "testing-library/prefer-presence-queries": "error",
+        "testing-library/prefer-query-by-disappearance": "error",
+        "testing-library/prefer-screen-queries": "error",
+        "testing-library/render-result-naming-convention": "error"
+      }
+    },
+    {
+      "files": ["**/*.stories.{ts,tsx,js,jsx,mjs,cjs}"],
+      "jsPlugins": ["eslint-plugin-storybook"],
+      "rules": {
+        // Storybook recommended + csf
+        "react-hooks/rules-of-hooks": "off",
+        "storybook/await-interactions": "error",
+        "storybook/context-in-play-function": "error",
+        "storybook/default-exports": "error",
+        "storybook/hierarchy-separator": "warn",
+        "storybook/no-redundant-story-name": "warn",
+        "storybook/no-renderer-packages": "error",
+        "storybook/prefer-pascal-case": "warn",
+        "storybook/csf-component": "warn",
+        "storybook/story-exports": "error",
+        "storybook/no-stories-of": "error",
+        "storybook/no-title-property-in-meta": "error"
+      }
+    }
+  ]
+}

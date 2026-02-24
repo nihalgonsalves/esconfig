@@ -10,9 +10,8 @@
   },
   "files": [
     ".oxlintrc.json",
+    ".oxlintrc.react.json",
     ".oxfmt.json",
-    "eslint.config.react-shared.js",
-    "eslint.config.react-shared.d.ts",
     "tsconfig.shared.json"
   ],
   "type": "module",
@@ -26,33 +25,40 @@
     "format": "oxfmt",
     "format:check": "oxfmt --check"
   },
-  "dependencies": {
-    "@vitest/eslint-plugin": "^1.6.9",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-jest-dom": "^5.5.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-storybook": "^10.2.10",
-    "eslint-plugin-testing-library": "^7.16.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^20.4.2",
     "@commitlint/config-conventional": "^20.4.2",
     "@types/node": "^24.10.13",
-    "eslint": "^10.0.1",
     "knip": "^5.85.0",
     "lefthook": "^2.1.1",
     "oxfmt": "^0.35.0",
     "oxlint": "^1.50.0",
-    "oxlint-tsgolint": "^0.14.2",
+    "oxlint-tsgolint": "^0.15.0",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "eslint": "^10.0.1",
+    "eslint-plugin-jest-dom": "^5.5.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-storybook": "^10.2.12",
+    "eslint-plugin-testing-library": "^7.16.0",
     "oxlint": "^1.50.0",
     "oxlint-tsgolint": "^0.14.2",
     "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@10.29.3+sha512.498e1fb4cca5aa06c1dcf2611e6fafc50972ffe7189998c409e90de74566444298ffe43e6cd2acdc775ba1aa7cc5e092a8b7054c811ba8c5770f84693d33d2dc"
+  "peerDependenciesMeta": {
+    "eslint-plugin-jest-dom": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    },
+    "eslint-plugin-storybook": {
+      "optional": true
+    },
+    "eslint-plugin-testing-library": {
+      "optional": true
+    }
+  },
+  "packageManager": "pnpm@10.30.2+sha512.36cdc707e7b7940a988c9c1ecf88d084f8514b5c3f085f53a2e244c2921d3b2545bc20dd4ebe1fc245feec463bb298aecea7a63ed1f7680b877dc6379d8d0cb4"
 }

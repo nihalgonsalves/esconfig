@@ -8,14 +8,6 @@
   "env": {
     "builtin": true
   },
-  "overrides": [
-    {
-      "files": ["**/*.config.*"],
-      "rules": {
-        "import/no-default-export": "off"
-      }
-    }
-  ],
   "plugins": ["typescript", "import", "unicorn"],
   "rules": {
     // 2026-02-16 migration from eslint skipped 15 unsupported rules
@@ -280,5 +272,37 @@
     "typescript/use-unknown-in-catch-callback-variable": "error",
     "use-isnan": "error",
     "valid-typeof": "error"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.config.*", "**/.storybook/**/*", "**/*.stories.tsx"],
+      "rules": {
+        "import/no-default-export": "off"
+      }
+    },
+    {
+      "files": ["**/*.test.ts"],
+      "rules": {
+        "eslint/no-await-in-loop": "off",
+        "typescript/ban-ts-comment": [
+          "error",
+          {
+            "ts-expect-error": false,
+            "ts-ignore": true,
+            "ts-nocheck": true,
+            "ts-check": false
+          }
+        ]
+      }
+    },
+    {
+      "files": ["**/*.d.ts"],
+      "rules": {
+        "typescript/no-empty-object-type": "off",
+        "typescript/consistent-type-definitions": "off",
+        "typescript/consistent-indexed-object-style": "off",
+        "unicorn/require-module-specifiers": "off"
+      }
+    }
+  ]
 }

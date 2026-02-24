@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/knip/schema.json",
-  "entry": ["eslint.config.react-shared.js!", "test.ts"],
+  "entry": ["test.ts"],
   "project": ["**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}"],
   "ignoreDependencies": ["@commitlint/cli"],
 }
