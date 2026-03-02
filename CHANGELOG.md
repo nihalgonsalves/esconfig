@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.2](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.16.1...esconfig-v0.16.2) (2026-03-02)
+
+
+### Features
+
+* set oxlint typeAware in config ([387e1fe](https://github.com/nihalgonsalves/esconfig/commit/387e1fef475321cb7ac6550008ad98e24dadefe3))
+
 ## [0.16.1](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.16.0...esconfig-v0.16.1) (2026-03-02)
 
 
