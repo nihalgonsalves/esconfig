@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.3](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.16.2...esconfig-v0.16.3) (2026-03-08)
+
+
+### Bug Fixes
+
+* don’t specify typeAware in root config ([81ee767](https://github.com/nihalgonsalves/esconfig/commit/81ee767c22d2a6fb6024ac1e8f0bc7e28d19d80c))
+
 ## [0.16.2](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.16.1...esconfig-v0.16.2) (2026-03-02)
 
 
