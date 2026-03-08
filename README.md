@@ -31,7 +31,11 @@ Shared ECMAScript Config (TypeScript, oxlint, oxfmt, optional eslint)
 
    ```json
    {
-     "extends": ["node_modules/@nihalgonsalves/esconfig/.oxlintrc.json"]
+     "extends": ["node_modules/@nihalgonsalves/esconfig/.oxlintrc.json"],
+     "options": {
+       "typeAware": true,
+       "typeCheck": true
+     }
    }
    ```
 

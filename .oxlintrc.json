@@ -5,9 +5,6 @@
     "suspicious": "error",
     "perf": "error"
   },
-  "options": {
-    "typeAware": true
-  },
   "env": {
     "builtin": true
   },

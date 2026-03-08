@@ -5,7 +5,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.oxc": "explicit"
   },
-  "oxc.typeAware": true,
   "yaml.schemas": {
     "node_modules/lefthook/schema.json": ["lefthook.yml", "lefthook-local.yml"]
   }
