@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.4](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.16.3...esconfig-v0.16.4) (2026-03-12)
+
+
+### Features
+
+* use new extend-compatible oxlint options ([53884e9](https://github.com/nihalgonsalves/esconfig/commit/53884e942129e9c1b508d80469cdb44418819238))
+
 ## [0.16.3](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.16.2...esconfig-v0.16.3) (2026-03-08)
 
 
