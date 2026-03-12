@@ -1,6 +1,6 @@
 # esconfig
 
-Shared ECMAScript Config (TypeScript, oxlint, oxfmt, optional eslint)
+Shared ECMAScript Config (TypeScript, oxlint, oxfmt)
 
 ## Usage
 
@@ -8,8 +8,6 @@ Shared ECMAScript Config (TypeScript, oxlint, oxfmt, optional eslint)
 
    ```sh
    pnpm add -D @nihalgonsalves/esconfig typescript oxlint oxlint-tsgolint oxfmt
-   # optionally for react:
-   pnpm add -D eslint
    ```
 
 2. `tsconfig.json`
@@ -29,41 +27,27 @@ Shared ECMAScript Config (TypeScript, oxlint, oxfmt, optional eslint)
 
 4. `.oxlintrc.json`
 
-   ```json
+   ```jsonc
    {
-     "extends": ["node_modules/@nihalgonsalves/esconfig/.oxlintrc.json"],
-     "options": {
-       "typeAware": true,
-       "typeCheck": true
-     }
+     "extends": [
+       "node_modules/@nihalgonsalves/esconfig/.oxlintrc.json",
+       // optional:
+       "node_modules/@nihalgonsalves/esconfig/.oxlintrc.react.json",
+     ],
    }
    ```
 
-5. If you're using React, `eslint.config.js`:
-
-   ```js
-   import tseslint from "typescript-eslint";
-
-   import sharedConfig from "@nihalgonsalves/esconfig/eslint.config.react-shared";
-
-   export default tseslint.config(
-     { ignores: [] },
-     ...sharedConfig,
-     // ... others
-   );
-   ```
-
-6. `package.json`
+5. `package.json`
 
    ```json
    {
      "scripts": {
        "build": "tsc",
-       "lint": "oxlint --type-aware --report-unused-disable-directives-severity=error && eslint ./src/",
+       "lint": "oxlint",
        "format": "oxfmt",
        "format:check": "oxfmt --check"
      }
    }
    ```
 
-7. Done! Don't forget to run `build`, `lint` and `format:check` in your CI workflow.
+6. Done! Don't forget to run `build`, `lint` and `format:check` in your CI workflow.

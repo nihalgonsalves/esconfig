@@ -9,6 +9,11 @@
     "builtin": true
   },
   "plugins": ["typescript", "import", "unicorn"],
+  "options": {
+    "typeAware": true,
+    "typeCheck": true,
+    "reportUnusedDisableDirectives": "error"
+  },
   "rules": {
     // 2026-02-16 migration from eslint skipped 15 unsupported rules
     // - import/no-extraneous-dependencies: [
@@ -32,8 +37,6 @@
     //     optionalDependencies: false,
     //   },
     // ],
-    // - no-octal
-    // - object-shorthand
     // - typescript/dot-notation
     // - typescript/method-signature-style
     // - typescript/naming-convention
@@ -100,6 +103,7 @@
       }
     ],
     "no-var": "error",
+    "object-shorthand": "error",
     "prefer-const": "error",
     "prefer-rest-params": "error",
     "prefer-spread": "error",
