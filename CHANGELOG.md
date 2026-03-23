@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.16.5...esconfig-v0.17.0) (2026-03-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* use typescript v6 ([#236](https://github.com/nihalgonsalves/esconfig/issues/236))
+
+### Features
+
+* use typescript v6 ([#236](https://github.com/nihalgonsalves/esconfig/issues/236)) ([2b9a4e7](https://github.com/nihalgonsalves/esconfig/commit/2b9a4e727f190cf5fa5cc14f7c49dbb498656e3e))
+
 ## [0.16.5](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.16.4...esconfig-v0.16.5) (2026-03-16)
 
 
