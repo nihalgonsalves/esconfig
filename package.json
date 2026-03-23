@@ -30,11 +30,11 @@
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@types/node": "^24.12.0",
-    "knip": "^5.87.0",
+    "knip": "^6.0.3",
     "lefthook": "^2.1.4",
     "oxfmt": "^0.41.0",
     "oxlint": "^1.56.0",
-    "oxlint-tsgolint": "^0.17.0",
+    "oxlint-tsgolint": "^0.17.1",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
@@ -43,7 +43,7 @@
     "eslint-plugin-storybook": "^10.2.16",
     "eslint-plugin-testing-library": "^7.16.0",
     "oxlint": "^1.56.0",
-    "oxlint-tsgolint": "^0.17.0",
+    "oxlint-tsgolint": "^0.17.1",
     "typescript": "^5.9.3"
   },
   "peerDependenciesMeta": {
