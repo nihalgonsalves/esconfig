@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.1](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.17.0...esconfig-v0.17.1) (2026-03-28)
+
+
+### Features
+
+* oxfmt 0.42.0, oxlint 1.57.0, deps ([#252](https://github.com/nihalgonsalves/esconfig/issues/252)) ([83c555d](https://github.com/nihalgonsalves/esconfig/commit/83c555d0ecfb307bdbe667b10f75aeeb4394242c))
+
 ## [0.17.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.16.5...esconfig-v0.17.0) (2026-03-23)
 
 
