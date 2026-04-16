@@ -29,12 +29,12 @@
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
-    "@types/node": "^24.12.0",
-    "knip": "^6.1.0",
-    "lefthook": "^2.1.4",
-    "oxfmt": "^0.42.0",
-    "oxlint": "^1.57.0",
-    "oxlint-tsgolint": "^0.18.1",
+    "@types/node": "^24.12.2",
+    "knip": "^6.4.1",
+    "lefthook": "^2.1.5",
+    "oxfmt": "^0.45.0",
+    "oxlint": "^1.60.0",
+    "oxlint-tsgolint": "^0.21.0",
     "typescript": "^6.0.2"
   },
   "peerDependencies": {
@@ -42,9 +42,9 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-storybook": "^10.2.16",
     "eslint-plugin-testing-library": "^7.16.0",
-    "oxlint": "^1.57.0",
-    "oxlint-tsgolint": "^0.17.1",
-    "typescript": "^5.9.3"
+    "oxlint": "^1.60.0",
+    "oxlint-tsgolint": "^0.21.0",
+    "typescript": "^6.0.2"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-jest-dom": {
@@ -60,5 +60,5 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be"
+  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319"
 }
