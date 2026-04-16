@@ -31,7 +31,7 @@
     "@commitlint/config-conventional": "^20.5.0",
     "@types/node": "^24.12.2",
     "knip": "^6.4.1",
-    "lefthook": "^2.1.5",
+    "lefthook": "^2.1.6",
     "oxfmt": "^0.45.0",
     "oxlint": "^1.60.0",
     "oxlint-tsgolint": "^0.21.0",
