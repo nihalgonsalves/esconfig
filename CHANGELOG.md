@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.2](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.17.1...esconfig-v0.17.2) (2026-04-16)
+
+
+### Features
+
+* **deps:** bump oxlint ([#255](https://github.com/nihalgonsalves/esconfig/issues/255)) ([ad92d54](https://github.com/nihalgonsalves/esconfig/commit/ad92d54ca196b5b0f828f99b62799763564eb6b5))
+
 ## [0.17.1](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.17.0...esconfig-v0.17.1) (2026-03-28)
 
 
