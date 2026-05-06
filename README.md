@@ -23,7 +23,7 @@ Shared ECMAScript Config (TypeScript, oxlint, oxfmt)
    }
    ```
 
-3. copy [`.oxlintrc.json`](./.oxlintrc.json)
+3. copy [`.oxfmtrc.json`](./.oxfmtrc.json) (does not support `extends`)
 
 4. `.oxlintrc.json`
 
