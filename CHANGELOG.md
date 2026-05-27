@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.4](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.17.3...esconfig-v0.17.4) (2026-05-27)
+
+
+### Features
+
+* **deps:** bump fast-uri from 3.1.0 to 3.1.2 ([#263](https://github.com/nihalgonsalves/esconfig/issues/263)) ([34b54b1](https://github.com/nihalgonsalves/esconfig/commit/34b54b103401495547981be1693a067ddce794bf))
+
 ## [0.17.3](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.17.2...esconfig-v0.17.3) (2026-04-23)
 
 
