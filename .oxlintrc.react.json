@@ -9,7 +9,6 @@
     "builtin": true
   },
   "plugins": ["react", "jsx-a11y"],
-  "jsPlugins": [{ "name": "react-hooks-js", "specifier": "eslint-plugin-react-hooks" }],
   "rules": {
     "no-restricted-globals": [
       "error",
@@ -140,13 +139,7 @@
     // - react/hook-use-state
     // - react/jsx-no-leaked-render
 
-    // react-compiler
-    // https://github.com/oxc-project/oxc/issues/10048
-    "react-hooks-js/set-state-in-effect": "error",
-    "react-hooks-js/preserve-manual-memoization": "error",
-    "react-hooks-js/refs": "error",
-    "react-hooks-js/immutability": "error",
-    "react-hooks-js/error-boundaries": "error",
+    "react/react-compiler": "error",
 
     // custom jsx-a11y rules
     "jsx-a11y/alt-text": [
