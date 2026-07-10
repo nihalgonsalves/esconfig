@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.17.4...esconfig-v0.18.0) (2026-07-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* use oxc-native react compiler rules
+
+### Features
+
+* use oxc-native react compiler rules ([da4186f](https://github.com/nihalgonsalves/esconfig/commit/da4186f1ddcb89ec72a8639ce21fc476e6b348e5))
+
 ## [0.17.4](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.17.3...esconfig-v0.17.4) (2026-05-27)
 
 
