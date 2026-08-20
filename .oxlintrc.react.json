@@ -139,8 +139,6 @@
     // - react/hook-use-state
     // - react/jsx-no-leaked-render
 
-    "react/react-compiler": "error",
-
     // custom jsx-a11y rules
     "jsx-a11y/alt-text": [
       "error",
