@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.2](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.18.1...esconfig-v0.18.2) (2026-08-20)
+
+
+### Bug Fixes
+
+* **oxlint:** remove react compiler nursery rule ([#277](https://github.com/nihalgonsalves/esconfig/issues/277)) ([a2bc43d](https://github.com/nihalgonsalves/esconfig/commit/a2bc43d78bbb1be39ff06ef9e4100053842fb69a))
+
 ## [0.18.1](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.18.0...esconfig-v0.18.1) (2026-08-17)
 
 
