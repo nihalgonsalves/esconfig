@@ -28,11 +28,11 @@
   "devDependencies": {
     "@commitlint/cli": "^21.2.2",
     "@commitlint/config-conventional": "^21.2.2",
-    "@types/node": "^24.13.3",
-    "knip": "^6.34.0",
-    "lefthook": "^2.1.12",
-    "oxfmt": "^0.66.0",
-    "oxlint": "^1.81.0",
+    "@types/node": "^24.13.4",
+    "knip": "^6.35.1",
+    "lefthook": "^2.1.14",
+    "oxfmt": "^0.67.0",
+    "oxlint": "^1.82.0",
     "oxlint-tsgolint": "^7.0.2001",
     "typescript": "^7.0.2"
   },
@@ -40,7 +40,7 @@
     "eslint-plugin-jest-dom": "^5.5.0",
     "eslint-plugin-storybook": "^10.2.16",
     "eslint-plugin-testing-library": "^7.16.0",
-    "oxlint": "^1.81.0",
+    "oxlint": "^1.82.0",
     "oxlint-tsgolint": "^7.0.2001",
     "typescript": "^7.0.2"
   },
