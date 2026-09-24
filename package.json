@@ -26,22 +26,22 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@commitlint/cli": "^21.2.2",
-    "@commitlint/config-conventional": "^21.2.2",
-    "@types/node": "^24.13.4",
-    "knip": "^6.35.1",
+    "@commitlint/cli": "^21.2.3",
+    "@commitlint/config-conventional": "^21.2.3",
+    "@types/node": "^24.13.6",
+    "knip": "^6.37.0",
     "lefthook": "^2.1.14",
-    "oxfmt": "^0.67.0",
-    "oxlint": "^1.82.0",
-    "oxlint-tsgolint": "^7.0.2001",
+    "oxfmt": "^0.68.0",
+    "oxlint": "^1.83.0",
+    "oxlint-tsgolint": "^7.0.2002",
     "typescript": "^7.0.2"
   },
   "peerDependencies": {
     "eslint-plugin-jest-dom": "^5.5.0",
     "eslint-plugin-storybook": "^10.2.16",
     "eslint-plugin-testing-library": "^7.16.0",
-    "oxlint": "^1.82.0",
-    "oxlint-tsgolint": "^7.0.2001",
+    "oxlint": "^1.83.0",
+    "oxlint-tsgolint": "^7.0.2002",
     "typescript": "^7.0.2"
   },
   "peerDependenciesMeta": {
