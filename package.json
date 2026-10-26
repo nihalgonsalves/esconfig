@@ -28,20 +28,20 @@
   "devDependencies": {
     "@commitlint/cli": "^21.2.4",
     "@commitlint/config-conventional": "^21.2.4",
-    "@types/node": "^24.19.2",
-    "knip": "^6.42.0",
+    "@types/node": "^26.6.5",
+    "knip": "^6.43.0",
     "lefthook": "^2.2.2",
-    "oxfmt": "^0.73.0",
-    "oxlint": "^1.88.0",
-    "oxlint-tsgolint": "^7.0.2004",
+    "oxfmt": "^0.74.0",
+    "oxlint": "^1.89.0",
+    "oxlint-tsgolint": "^7.0.2005",
     "typescript": "^7.0.2"
   },
   "peerDependencies": {
-    "eslint-plugin-jest-dom": "^5.5.0",
-    "eslint-plugin-storybook": "^10.2.16",
-    "eslint-plugin-testing-library": "^7.16.0",
-    "oxlint": "^1.88.0",
-    "oxlint-tsgolint": "^7.0.2004",
+    "eslint-plugin-jest-dom": "^5.10.1",
+    "eslint-plugin-storybook": "^10.6.3",
+    "eslint-plugin-testing-library": "^7.16.2",
+    "oxlint": "^1.89.0",
+    "oxlint-tsgolint": "^7.0.2005",
     "typescript": "^7.0.2"
   },
   "peerDependenciesMeta": {
@@ -55,5 +55,5 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@11.5.1+sha512.93f7b57422ea7068257235b4c16eb60762eb68e1dc23723199cc739043ea9be2c4143274a399d8c6defa2b1176226d9ca1c4b63482d6200c1a8fbaa78c1d1485"
+  "packageManager": "pnpm@12.15.0"
 }
