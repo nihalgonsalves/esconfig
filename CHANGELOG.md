@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.19.0](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.18.2...esconfig-v0.19.0) (2026-11-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* enable more rules from pre-oxlint migration
+
+### Features
+
+* enable more rules from pre-oxlint migration ([d28aa84](https://github.com/nihalgonsalves/esconfig/commit/d28aa8414fa1210b4304d4969a974ccc8904294a))
+
 ## [0.18.2](https://github.com/nihalgonsalves/esconfig/compare/esconfig-v0.18.1...esconfig-v0.18.2) (2026-08-20)
 
 
