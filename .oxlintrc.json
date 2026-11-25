@@ -15,37 +15,13 @@
     "reportUnusedDisableDirectives": "error"
   },
   "rules": {
-    // 2026-02-16 migration from eslint skipped 15 unsupported rules
-    // - import/no-extraneous-dependencies: [
+    // not implemented in oxlint yet (skipped in the 2026-02-16 eslint migration):
+    // - typescript/naming-convention: [
     //   "error",
-    //   {
-    //     devDependencies: [
-    //       "test/**",
-    //       "tests/**",
-    //       "spec/**",
-    //       "**/__tests__/**",
-    //       "**/__mocks__/**",
-    //       "test.{js,jsx}",
-    //       "test.{ts,tsx}",
-    //       "test-*.{js,jsx}",
-    //       "test-*.{ts,tsx}",
-    //       "**/*{.,_}{test,spec}.{js,jsx}",
-    //       "**/*{.,_}{test,spec}.{ts,tsx}",
-    //       "**/*.config.{js,ts,cjs,mjs,cts,mts}",
-    //       "**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)",
-    //     ],
-    //     optionalDependencies: false,
-    //   },
+    //   { selector: "variable", format: ["camelCase", "PascalCase", "UPPER_CASE"] },
+    //   { selector: "function", format: ["camelCase", "PascalCase"] },
+    //   { selector: "typeLike", format: ["PascalCase"] },
     // ],
-    // - typescript/dot-notation
-    // - typescript/method-signature-style
-    // - typescript/naming-convention
-    // - typescript/no-unnecessary-type-conversion
-    // - typescript/no-unnecessary-type-parameters
-    // - typescript/no-useless-default-assignment
-    // - typescript/prefer-find
-    // - typescript/prefer-regexp-exec
-    // - typescript/prefer-string-starts-ends-with
     "arrow-body-style": "error",
     "class-methods-use-this": "error",
     "default-param-last": ["error"],
@@ -124,12 +100,14 @@
     "typescript/consistent-indexed-object-style": "error",
     "typescript/consistent-type-assertions": "error",
     "typescript/consistent-type-definitions": ["error", "type"],
+    "typescript/dot-notation": "error",
     "typescript/consistent-type-imports": [
       "error",
       {
         "fixStyle": "inline-type-imports"
       }
     ],
+    "typescript/method-signature-style": "error",
     "typescript/no-confusing-void-expression": "error",
     "typescript/no-deprecated": "error",
     "typescript/no-dynamic-delete": "error",
@@ -154,6 +132,7 @@
     "typescript/non-nullable-type-assertion-style": "error",
     "typescript/only-throw-error": "error",
     "typescript/prefer-enum-initializers": "error",
+    "typescript/prefer-find": "error",
     "typescript/prefer-for-of": "error",
     "typescript/prefer-function-type": "error",
     "typescript/prefer-includes": "error",
@@ -170,7 +149,9 @@
     "typescript/prefer-optional-chain": "error",
     "typescript/prefer-promise-reject-errors": "error",
     "typescript/prefer-reduce-type-parameter": "error",
+    "typescript/prefer-regexp-exec": "error",
     "typescript/prefer-return-this-type": "error",
+    "typescript/prefer-string-starts-ends-with": "error",
     "typescript/promise-function-async": "error",
     "typescript/related-getter-setter-pairs": "error",
     "typescript/restrict-plus-operands": [

@@ -120,6 +120,8 @@
     "react/no-namespace": "error",
     "react/iframe-missing-sandbox": "error",
     "react-hooks/exhaustive-deps": "error",
+    // obsolete with the automatic JSX runtime (enabled via the suspicious category)
+    "react/react-in-jsx-scope": "off",
     "react/jsx-key": [
       "error",
       {
@@ -130,13 +132,10 @@
     ],
     // not implemented in oxlint yet:
     // - react/jsx-no-bind
-    // - react/no-did-update-set-state
     // - react/prefer-stateless-function
     // - react/destructuring-assignment
-    // - react/no-unstable-nested-components
     // - react/no-arrow-function-lifecycle
     // - react/no-invalid-html-attribute
-    // - react/hook-use-state
     // - react/jsx-no-leaked-render
 
     // custom jsx-a11y rules
@@ -229,12 +228,6 @@
         "handlers": ["onClick", "onMouseDown", "onMouseUp", "onKeyPress", "onKeyDown", "onKeyUp"]
       }
     ]
-    // not implemented in oxlint yet:
-    // - jsx-a11y/control-has-associated-label
-    // - jsx-a11y/interactive-supports-focus
-    // - jsx-a11y/no-interactive-element-to-noninteractive-role
-    // - jsx-a11y/no-noninteractive-element-interactions
-    // - jsx-a11y/no-noninteractive-element-to-interactive-role
   },
   "overrides": [
     {
@@ -282,16 +275,14 @@
         "vitest/prefer-to-have-length": "error",
         "vitest/prefer-todo": "error",
         "vitest/require-to-throw-message": "error",
+        "vitest/prefer-called-exactly-once-with": "error",
+        "vitest/padding-around-after-all-blocks": "error",
+        "vitest/padding-around-test-blocks": "error",
         // not implemented in oxlint yet:
-        // - vitest/prefer-called-exactly-once-with
-        // - vitest/valid-expect-in-promise
-        // - vitest/valid-title
-        // - vitest/padding-around-after-all-blocks
         // - vitest/padding-around-after-each-blocks
         // - vitest/padding-around-before-all-blocks
         // - vitest/padding-around-before-each-blocks
         // - vitest/padding-around-describe-blocks
-        // - vitest/padding-around-test-blocks
         // - vitest/prefer-vi-mocked
 
         // jest-dom recommended
